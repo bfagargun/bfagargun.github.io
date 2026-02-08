@@ -1,0 +1,9 @@
+footer a[href*="hugoblox.com"] {
+  display: none !important;
+}
+
+footer .powered-by,
+footer .hb-powered-by,
+footer .site-footer__poweredby {
+  display: none !important;
+}
