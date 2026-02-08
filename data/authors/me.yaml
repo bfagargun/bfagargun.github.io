@@ -66,7 +66,10 @@ education:
     end: ""  # ongoing
     summary: |
       Clinical training in gastroenterology and hepatology.
-
+  - degree: PhD, Clinical Trials
+    institution: Istanbul University
+    start: "2026"
+    end: ""  # ongoing
 
 experience:
   - role: Senior AI Research Scientist
