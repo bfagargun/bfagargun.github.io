@@ -108,8 +108,13 @@ languages:
     label: Fluent
 
 awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
+  - title: Best Poster Presentation Award
+    awarder: TGD
+    date: "2025"
+    summary: Assessment of liver stiffness by transient elastography in heart failure: a cross-sectional study linking hepatic congestion with echocardiographic findings
+    icon: hero/trophy
+  - title: Best Thesis Award
+    awarder: Istanbul Faculty of Medicine, Istanbul University
+    date: "2023"
+    summary: Evaluation of hepatobiliary pathologies using non-invasive methods (radiological, fibroscan and biochemical) in patients with inflammatory bowel disease
     icon: hero/trophy
