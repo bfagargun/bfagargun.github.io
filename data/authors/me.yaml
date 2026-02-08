@@ -2,18 +2,17 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
+  display: Dr. Besim Fazil Agargun
+  given: Besim Fazıl
+  family: Ağargün
+  alternate: 'Besim Fazıl Ağargün'  # Example: 王伟
+  pronunciation: 'Besim Fazıl Ağargün'  # Example: Wáng Wěi
+  pronouns: 
 postnominals:
-  - PhD
-  - MIEEE
+  - MD
 status:
-  icon: "☕️"
-role: Senior AI Research Scientist
+  icon: "🩺🔬"
+role: Gastroenterologist
 bio: |
   Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
   has been published in top conferences like NeurIPS and ICML, with over
