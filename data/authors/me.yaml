@@ -5,13 +5,13 @@ name:
   display: Dr. Besim Fazil Agargun
   given: Besim Fazıl
   family: Ağargün
-  alternate: 'Besim Fazıl Ağargün'  # Example: 王伟
+  alternate: ''  # Example: 王伟
   pronunciation: 'Besim Fazıl Ağargün'  # Example: Wáng Wěi
   pronouns: 
 postnominals:
   - MD
 status:
-  icon: "🩺🔬"
+  icon: "🩺"
 role: Gastroenterologist
 bio: |
   Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
