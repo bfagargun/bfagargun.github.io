@@ -5,9 +5,9 @@ name:
   display: Dr. Besim Fazil Agargun
   given: Besim Fazıl
   family: Ağargün
-  alternate: ''  # Example: 王伟
-  pronunciation: 'Besim Fazıl Ağargün'  # Example: Wáng Wěi
-  pronouns: 
+  alternate: 'Besim Fazıl Ağargün'  # Example: 王伟
+  pronunciation: ''  # Example: Wáng Wěi
+  pronouns: Besim Fazıl Ağargün
 postnominals:
   - MD
 status:
