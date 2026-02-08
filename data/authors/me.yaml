@@ -46,24 +46,25 @@ interests:
   - AI Ethics
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: MD
+    institution: Istanbul University, Istanbul Faculty of Medicine
+    start: "2012"
+    end: "2018"
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+      Medical education and early clinical training.
+
+  - degree: Residency, Internal Medicine
+    institution: Istanbul University, Istanbul Faculty of Medicine
+    start: "2018"
+    end: "2022"
+
+  - degree: Fellowship, Gastroenterology
+    institution: Istanbul University, Istanbul Faculty of Medicine
+    start: "2024"
+    end: ""  # ongoing
+    summary: |
+      Clinical training in gastroenterology and hepatology.
+
 
 experience:
   - role: Senior AI Research Scientist
