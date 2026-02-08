@@ -115,9 +115,10 @@ hugoblox:
   # Legal notices and licensing
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
-  notice: "© {year} Besim Fazıl Ağargün"
-  license:
-    type: custom
+    notice: "© {year} Besim Fazıl Ağargün"
+    license:
+      type: custom
+
 
 
   # ────────────────────────────────────────────────────────────────────────────
