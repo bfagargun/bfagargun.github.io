@@ -13,3 +13,23 @@ footer a[href*="hugoblox.com"],
   height: 0 !important;
   overflow: hidden !important;
 }
+
+
+/* "Made with ." yazısını taşıyan wrapper'ları kapat */
+footer .powered-by,
+footer .hb-powered-by,
+footer .site-footer__poweredby,
+footer [class*="poweredby"],
+footer [class*="powered-by"] {
+  display: none !important;
+}
+
+/* Boşluk kalmasın */
+footer .powered-by,
+footer .hb-powered-by,
+footer .site-footer__poweredby {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
