@@ -1,16 +1,4 @@
-/* Footer: sadece ilk satır kalsın (copyright); diğer her şeyi gizle */
-.site-footer .container > *:not(:first-child),
-.site-footer .container-fluid > *:not(:first-child) {
-  display: none !important;
-}
-
-/* Ekstra: eğer "Made with" farklı bir wrapper'daysa */
-.site-footer [class*="powered"],
-.site-footer [data-hbx*="powered"] {
-  display: none !important;
-}
-
-/* HugoBlox footer: "Made with ..." satırını tamamen kaldır */
-.page-footer p.powered-by {
+/* HugoBlox footer: sadece copyright kalsın, "Made with …" satırını kaldır */
+.page-footer footer p.powered-by:not(:first-of-type) {
   display: none !important;
 }
