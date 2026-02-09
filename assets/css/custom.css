@@ -1,11 +1,4 @@
 
-[data-hbx="poweredby"],
-[data-hbx="poweredby_cta"],
-footer a[href*="hugoblox.com"] {
-  display: none !important;
-}
-
-
-.site-footer > *:last-child {
+.site-footer > *:not(:first-child) {
   display: none !important;
 }
