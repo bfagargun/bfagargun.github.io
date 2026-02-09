@@ -9,3 +9,8 @@
 .site-footer [data-hbx*="powered"] {
   display: none !important;
 }
+
+/* HugoBlox footer: "Made with ..." satırını tamamen kaldır */
+.page-footer p.powered-by {
+  display: none !important;
+}
