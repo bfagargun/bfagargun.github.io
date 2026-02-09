@@ -13,3 +13,10 @@ footer a[href*="hugoblox.com"] {
 [data-hbx="poweredby_cta"] {
   display: none !important;
 }
+
+.site-footer__poweredby {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
