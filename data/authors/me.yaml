@@ -37,10 +37,11 @@ links:
     url: https://orcid.org/0000-0002-3933-1881
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Inflammatory Bowel Disease (IBD)
+  - Advanced Endoscopy
+  - Noninvasive Assessment of Liver Disease
+  - Artificial Intelligence in Endoscopy
+  - AI-Assisted Clinical Decision Support
 
 education:
   - degree: MD
@@ -74,33 +75,6 @@ experience:
     summary: |
       Clinical care in gastroenterology and hepatology; endoscopy unit practice.
       Research in real-world cohorts and AI-assisted analytics.
-
-
-skills:
-  - name: Technical Skills
-    items:
-      - label: Python
-        level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
-        level: 4
-  - name: Research & Communication
-    items:
-      - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
-
-languages:
-  - name: Turkish
-    level: 5
-    label: Native
-  - name: English
-    level: 4
-    label: Fluent
 
 awards:
   - title: Best Poster Presentation Award
