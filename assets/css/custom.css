@@ -1,0 +1,8 @@
+[data-hbx="poweredby_cta"],
+[data-hbx="poweredby"] {
+  display: none !important;
+}
+
+footer a[href*="hugoblox.com"] {
+  display: none !important;
+}
