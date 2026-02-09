@@ -2,3 +2,7 @@
 .site-footer > *:not(:first-child) {
   display: none !important;
 }
+
+.site-footer .container > *:not(:first-child) {
+  display: none !important;
+}
