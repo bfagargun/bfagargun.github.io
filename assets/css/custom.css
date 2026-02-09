@@ -1,18 +1,11 @@
-[data-hbx="poweredby_cta"],
-[data-hbx="poweredby"] {
-  display: none !important;
-}
-
-footer a[href*="hugoblox.com"] {
-  display: none !important;
-}
-
-.site-footer__poweredby,
-.site-footer__poweredby *,
 [data-hbx="poweredby"],
-[data-hbx="poweredby_cta"] {
+[data-hbx="poweredby_cta"],
+footer a[href*="hugoblox.com"],
+.site-footer__poweredby,
+.site-footer__poweredby * {
   display: none !important;
 }
+
 
 .site-footer__poweredby {
   margin: 0 !important;
