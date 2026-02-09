@@ -1,8 +1,11 @@
-
-.site-footer > *:not(:first-child) {
+/* Footer: sadece ilk satır kalsın (copyright); diğer her şeyi gizle */
+.site-footer .container > *:not(:first-child),
+.site-footer .container-fluid > *:not(:first-child) {
   display: none !important;
 }
 
-.site-footer .container > *:not(:first-child) {
+/* Ekstra: eğer "Made with" farklı bir wrapper'daysa */
+.site-footer [class*="powered"],
+.site-footer [data-hbx*="powered"] {
   display: none !important;
 }
