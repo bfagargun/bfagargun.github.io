@@ -6,3 +6,10 @@
 footer a[href*="hugoblox.com"] {
   display: none !important;
 }
+
+.site-footer__poweredby,
+.site-footer__poweredby *,
+[data-hbx="poweredby"],
+[data-hbx="poweredby_cta"] {
+  display: none !important;
+}
