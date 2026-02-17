@@ -24,8 +24,8 @@ hugoblox:
     description: "Besim Fazıl Ağargün"
     # Social accounts (used for meta tags like Twitter Cards)
     social:
-      twitter: "LoreLabs_"              # Twitter/X handle for Twitter Cards (without @)
-
+      twitter: "bfagargun"              # Twitter/X handle for Twitter Cards (without @)
+    site_icon: "media/icons/favicon.png"
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
   # Color and visual design system
