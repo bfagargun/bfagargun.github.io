@@ -25,7 +25,7 @@ hugoblox:
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "bfagargun"              # Twitter/X handle for Twitter Cards (without @)
-    site_icon: "static/favicon.png"
+    site_icon: "favicon.png"
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
   # Color and visual design system
