@@ -7,7 +7,7 @@
 title: 'Besim Fazıl Ağargün'
 # Website URL
 baseURL: 'https://besimagargun.com/'
-
+site_icon: "static/favicon.png"
 ############################
 ## LANGUAGE
 ############################
