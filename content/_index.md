@@ -48,5 +48,4 @@ sections:
         featured_only: false
     design:
       view: citation
-
 ---
