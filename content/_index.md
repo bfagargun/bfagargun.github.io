@@ -51,4 +51,10 @@ sections:
         featured_only: true
     design:
       view: citation
+     - block: contact
+    content:
+      title: "Contact"
+      text: ""
+    design:
+      columns: "2"
 ---
