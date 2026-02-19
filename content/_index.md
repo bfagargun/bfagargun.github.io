@@ -27,7 +27,7 @@ sections:
         size: md
       avatar:
         size: medium
-        shape: circle
+        shape: rounded
 
   - block: markdown
     content:
@@ -36,17 +36,23 @@ sections:
         My clinical and academic work focuses on inflammatory bowel disease (IBD),
         metabolic dysfunction–associated steatotic liver disease (MASLD), advanced endoscopy,
         and artificial intelligence applications in gastroenterology.
-
-        I am particularly interested in real-world data analysis, elastography-based risk stratification,
-        and AI-driven endoscopic quality improvement.
     design:
       columns: "1"
 
   - block: collection
     content:
-      title: "Publications"
-      page_type: publication
-      count: 0
+      title: "Selected Publications"
+      filters:
+        folders:
+          - publications
+        featured_only: false
     design:
       view: citation
+
+  - block: contact
+    content:
+      title: "Contact"
+      text: ""
+    design:
+      columns: "2"
 ---
