@@ -42,12 +42,11 @@ sections:
     design:
       columns: "1"
 
-- block: collection
-  content:
-    title: "Publications"
-    page_type: publication
-    count: 0
-  design:
-    view: citation
-
+  - block: collection
+    content:
+      title: "Publications"
+      page_type: publication
+      count: 0
+    design:
+      view: citation
 ---
