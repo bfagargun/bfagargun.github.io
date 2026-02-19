@@ -26,6 +26,9 @@ hugoblox:
     social:
       twitter: "bfagargun"              # Twitter/X handle for Twitter Cards (without @)
     site_icon: "favicon.png"
+    branding:
+  icon:
+    name: icon
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
   # Color and visual design system
