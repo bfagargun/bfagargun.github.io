@@ -84,7 +84,7 @@ hugoblox:
   # Site header and navigation bar
   # ────────────────────────────────────────────────────────────────────────────
   header:
-    enable: true
+    enable: false
     style: navbar
     sticky: true
     align: center
