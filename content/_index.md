@@ -5,18 +5,21 @@ date: 2022-10-24
 type: landing
 
 design:
-  spacing: "2.5rem"
+  spacing: "1.5rem"
 
 sections:
   - block: resume-biography-3
     content:
       username: me
-      text: ""
+      text: |-
+        My clinical and academic work focuses on inflammatory bowel disease (IBD),
+        metabolic dysfunction–associated steatotic liver disease (MASLD), advanced endoscopy,
+        and artificial intelligence applications in gastroenterology.
       button:
         text: Download CV
-        url: uploads/resume-.pdf
+        url: uploads/resume.pdf
       headings:
-        about: About
+        about: Research Focus
         education: Education
         interests: Research Interests
     design:
@@ -28,16 +31,6 @@ sections:
       avatar:
         size: medium
         shape: circle
-
-  - block: markdown
-    content:
-      title: "Research Focus"
-      text: |-
-        My clinical and academic work focuses on inflammatory bowel disease (IBD),
-        metabolic dysfunction–associated steatotic liver disease (MASLD), advanced endoscopy,
-        and artificial intelligence applications in gastroenterology.
-    design:
-      columns: "1"
 
   - block: collection
     content:
