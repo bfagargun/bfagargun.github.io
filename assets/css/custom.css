@@ -1,4 +1,22 @@
-/* HugoBlox footer: sadece copyright kalsın, "Made with …" satırını kaldır */
+/* HugoBlox footer: sadece copyright kalsın */
 .page-footer footer p.powered-by:not(:first-of-type) {
   display: none !important;
+}
+
+/* Tighten space between Research Interests and Research Focus on homepage */
+#research-interests.home-section {
+  padding-bottom: 1rem !important;
+  margin-bottom: 0 !important;
+}
+
+#research-focus.home-section {
+  padding-top: 1rem !important;
+  margin-top: 0 !important;
+}
+
+/* If the block adds inner spacing, reduce it too */
+#research-interests .section-heading,
+#research-interests .row,
+#research-interests .col-12 {
+  margin-bottom: 0.5rem !important;
 }
