@@ -5,10 +5,11 @@ date: 2022-10-24
 type: landing
 
 design:
-  spacing: "1.5rem"
+  spacing: "1rem"
 
 sections:
   - block: resume-biography-3
+    id: home-bio
     content:
       username: me
       text: |-
@@ -33,6 +34,7 @@ sections:
         shape: circle
 
   - block: collection
+    id: home-pubs
     content:
       title: "Selected Publications"
       filters:
