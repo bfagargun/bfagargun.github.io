@@ -3,20 +3,20 @@
   display: none !important;
 }
 
-/* Tighten space between Research Interests and Research Focus on homepage */
-#research-interests.home-section {
-  padding-bottom: 1rem !important;
+/* Reduce the big gap between Research Interests (bio block) and Selected Publications */
+#home-bio.home-section {
+  padding-bottom: 0.75rem !important;
   margin-bottom: 0 !important;
 }
 
-#research-focus.home-section {
-  padding-top: 1rem !important;
+#home-pubs.home-section {
+  padding-top: 0.75rem !important;
   margin-top: 0 !important;
 }
 
-/* If the block adds inner spacing, reduce it too */
-#research-interests .section-heading,
-#research-interests .row,
-#research-interests .col-12 {
+/* Sometimes there is extra bottom margin inside the bio section */
+#home-bio .section-heading,
+#home-bio .row,
+#home-bio .col-12 {
   margin-bottom: 0.5rem !important;
 }
