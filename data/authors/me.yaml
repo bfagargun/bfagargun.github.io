@@ -14,11 +14,11 @@ status:
   icon: "🩺"
 role: Gastroenterology Fellow
 bio: Gastroenterology fellow at Istanbul University, Istanbul Faculty of Medicine. Clinical focus includes inflammatory bowel disease and advanced endoscopy, with research centered on real-world outcomes and AI in endoscopy and gastrointestinal practice.
-
+ 
 affiliations:
   - name: Istanbul University, Istanbul Faculty of Medicine
     url: https://avesis.istanbul.edu.tr/bfagargun
-
+ 
 links:
   - icon: at-symbol
     url: mailto:bfagargun@istanbul.edu.tr
@@ -33,14 +33,14 @@ links:
     url: https://scholar.google.com/citations?hl=en&user=MeNxgD4AAAAJ
   - icon: academicons/pubmed
     url: https://pubmed.ncbi.nlm.nih.gov/?term=Agargun+BF%5BAuthor%5D&sort=date
-
+ 
 interests:
   - Inflammatory Bowel Disease (IBD)
   - Advanced Endoscopy
   - Noninvasive Assessment of Liver Disease
   - Artificial Intelligence in Endoscopy
   - AI-Assisted Clinical Decision Support
-
+ 
 education:
   - degree: MD
     institution: Istanbul University, Istanbul Faculty of Medicine
@@ -48,23 +48,24 @@ education:
     end: "2018"
     summary: |
       Medical education and early clinical training.
-
+ 
   - degree: Residency, Internal Medicine
     institution: Istanbul University, Istanbul Faculty of Medicine
     start: "2018"
     end: "2022"
-
+ 
   - degree: Fellowship, Gastroenterology
     institution: Istanbul University, Istanbul Faculty of Medicine
     start: "2024"
-    end: ""  # ongoing
+    end: "Present"
     summary: |
       Clinical training in gastroenterology and hepatology.
+ 
   - degree: PhD, Clinical Trials
     institution: Istanbul University
     start: "2026"
-    end: ""  # ongoing
-
+    end: "Present"
+ 
 experience:
   - role: Gastroenterology Fellow
     org: Istanbul University, Istanbul Faculty of Medicine
@@ -73,7 +74,7 @@ experience:
     summary: |
       Clinical care in gastroenterology and hepatology; endoscopy unit practice.
       Research in real-world cohorts and AI-assisted analytics.
-
+ 
 awards:
   - title: Best Poster Presentation Award
     awarder: TGD
