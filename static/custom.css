@@ -42,3 +42,22 @@ footer a[href*="hugoblox.com"] {
 .max-w-prose.grid ul { list-style: disc; padding-left: 1.25rem; margin: .25rem 0; }
 .max-w-prose.grid ul li { margin: .35rem 0; }
 .max-w-prose.grid p + p { margin-top: .6rem; }
+
+/* Profile badge: replace the device-dependent 🩺 emoji with a fixed stethoscope icon in the site blue */
+#home-bio .avatar-emoji {
+  font-size: 0 !important;
+  color: transparent !important;
+  background: #0f172a !important;
+  border: 1px solid color-mix(in oklch, var(--color-primary-400) 45%, transparent);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+#home-bio .avatar-emoji::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: var(--color-primary-400, #60a5fa);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11 2v2'/%3E%3Cpath d='M5 2v2'/%3E%3Cpath d='M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1'/%3E%3Cpath d='M8 15a6 6 0 0 0 12 0v-3'/%3E%3Ccircle cx='20' cy='10' r='2'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11 2v2'/%3E%3Cpath d='M5 2v2'/%3E%3Cpath d='M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1'/%3E%3Cpath d='M8 15a6 6 0 0 0 12 0v-3'/%3E%3Ccircle cx='20' cy='10' r='2'/%3E%3C/svg%3E") center / contain no-repeat;
+}
