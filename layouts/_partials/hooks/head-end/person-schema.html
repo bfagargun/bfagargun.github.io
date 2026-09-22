@@ -33,7 +33,7 @@
   "alumniOf": { "@type": "CollegeOrUniversity", "name": "Istanbul University, Istanbul Faculty of Medicine" },
   "knowsAbout": ["Gastroenterology", "Hepatology", "Inflammatory Bowel Disease", "Endoscopy", "Transient Elastography", "Natural Language Processing", "Clinical Trials"],
   "identifier": { "@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0002-3933-1881" },
-  "sameAs": {{ $sameAs | jsonify | safeJS }}
+  "sameAs": {{ $sameAs | append "https://orcid.org/0000-0002-3933-1881" | uniq | jsonify | safeJS }}
 }
 </script>
 {{- end -}}

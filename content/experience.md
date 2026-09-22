@@ -36,6 +36,6 @@ sections:
       title: Full CV
       text: A one-page PDF summary of training, research leadership, selected publications and academic service.
       button:
-        text: Download CV (updated Sep 2026)
+        text: Download CV
         url: /uploads/Agargun-CV-2026-09.pdf
 ---

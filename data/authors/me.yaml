@@ -12,7 +12,7 @@ postnominals:
   - MD
 status:
   icon: "🩺"
-role: Gastroenterology & Hepatology Fellow
+role: Gastroenterology Fellow
 bio: |
   Gastroenterology and hepatology fellow at Istanbul University, Istanbul Faculty of Medicine.
   My clinical work centres on inflammatory bowel disease and diagnostic and therapeutic endoscopy;
@@ -28,9 +28,6 @@ links:
   - icon: at-symbol
     url: mailto:bfagargun@istanbul.edu.tr
     label: E-mail Me
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-3933-1881
-    label: ORCID
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?hl=en&user=MeNxgD4AAAAJ
     label: Google Scholar
@@ -82,7 +79,7 @@ education:
     end: "2018"
 
 experience:
-  - role: Gastroenterology & Hepatology Fellow
+  - role: Gastroenterology Fellow
     org: Istanbul University, Istanbul Faculty of Medicine
     start: "2024"
     end: ""

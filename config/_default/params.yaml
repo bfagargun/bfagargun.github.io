@@ -82,7 +82,7 @@ hugoblox:
   # Site header and navigation bar
   # ────────────────────────────────────────────────────────────────────────────
   header:
-    enable: true
+    enable: false   # single-page site: no top bar / menu
     style: navbar
     sticky: true
     align: center

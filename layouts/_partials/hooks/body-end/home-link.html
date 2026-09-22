@@ -1,0 +1,4 @@
+{{- /* Single-page site without a navbar: sub-pages (publications, talks, CV) get a small "back to home" link. */ -}}
+{{- if not .IsHome -}}
+<a href="{{ site.Home.RelPermalink }}" class="home-link" aria-label="Back to home">&larr; Home</a>
+{{- end -}}

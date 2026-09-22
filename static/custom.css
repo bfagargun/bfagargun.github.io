@@ -8,3 +8,32 @@ footer p.powered-by:has(a[href*="hugoblox.com"]) {
 footer a[href*="hugoblox.com"] {
   display: none !important;
 }
+
+/* Homepage experience timeline: education is already shown in the biography block, so hide the duplicate. */
+#home-experience .flex.flex-col.gap-16 > div.w-full:last-child:not(:first-child) {
+  display: none !important;
+}
+
+/* "Back to home" link on sub-pages (no navbar on this site) */
+.home-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 50;
+  padding: .45rem .9rem;
+  border-radius: 9999px;
+  font-size: .9rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  background: rgba(30, 41, 59, .85);
+  border: 1px solid rgba(148, 163, 184, .25);
+  backdrop-filter: blur(6px);
+  text-decoration: none;
+}
+.home-link:hover { background: rgba(51, 65, 85, .95); color: #fff; }
+
+/* Keep the 6 profile icons on a single row on phones */
+@media (max-width: 480px) {
+  #home-bio .flex.flex-wrap.justify-center.gap-4 { gap: .6rem; flex-wrap: nowrap; }
+  #home-bio .flex.flex-wrap.justify-center.gap-4 > a { width: 2.75rem; height: 2.75rem; flex: 0 0 auto; }
+}

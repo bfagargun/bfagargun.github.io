@@ -17,7 +17,7 @@ sections:
         metabolic dysfunction–associated steatotic liver disease (MASLD), advanced endoscopy,
         and artificial intelligence applications in gastroenterology.
       button:
-        text: Download CV (updated Sep 2026)
+        text: Download CV
         url: uploads/Agargun-CV-2026-09.pdf
       headings:
         about: Research Focus
@@ -32,6 +32,26 @@ sections:
       avatar:
         size: medium
         shape: circle
+
+  - block: resume-experience
+    id: home-experience
+    content:
+      username: me
+    design:
+      date_format: '2006'
+      is_education_first: false
+
+  - block: markdown
+    id: service
+    content:
+      title: Academic Service & Memberships
+      text: |-
+        - **Peer reviewer** — *American Journal of Gastroenterology*, *Inflammatory Bowel Diseases*, *Journal of Clinical Gastroenterology*
+        - **Individual member** — European Society of Gastrointestinal Endoscopy (ESGE)
+        - **Young Co-Chair** — UEG Week 2026, moderated poster session "Therapeutics in IBD: Real-world experience (I)"
+        - Moderator and lead presenter in 20+ journal clubs and departmental academic sessions
+    design:
+      columns: '1'
 
   - block: collection
     id: home-pubs
@@ -96,6 +116,6 @@ sections:
           url: https://www.linkedin.com/in/besim-fazil-agargun
         - icon: brands/github
           url: https://github.com/bfagargun
-      map_url: https://maps.google.com/?q=Istanbul+University+Istanbul+Faculty+of+Medicine
+      map_url: https://maps.app.goo.gl/Ey4eb2UkBD5aQzT97
       show_form: false
 ---
