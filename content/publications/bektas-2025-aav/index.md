@@ -1,0 +1,52 @@
+---
+title: 'Damage accrual and predictors of mortality in ANCA-associated vasculitis:
+  a retrospective observational study'
+authors:
+- Murat Bektaş
+- Burak Ince
+- Sibel Zaralı
+- Übeyde Ayşe Gülseren
+- Ece Ük
+- me
+- Damla Yenersu Güzey
+- Yasemin Yalçınkaya
+- Bahar Artım-Esen
+- Ahmet Gul
+- Murat İnanç
+date: '2025-05-01'
+publication_types:
+- article-journal
+publication: '*Rheumatology International*'
+hugoblox:
+  ids:
+    doi: 10.1007/s00296-025-05883-7
+abstract: 'In this study, we aimed to evaluate the factors affecting the development
+  of damage and mortality in patients with AAV treated at our tertiary referral center.
+  This retrospective study included data on patients with AAV who fulfilled the Chapel
+  Hill Consensus Conference (CHCC) criteria. Patients were divided into c-ANCA/PR3( +)
+  and p-ANCA/MPO ( +) groups based on ANCA immunofluorescence and/or ELISA results,
+  and relapse, damage, and mortality data were compared across the groups. Data from
+  254 patients (n = 136, 53.5% female) were included in the analysis. Clinical diagnosis
+  was GPA in 186 (73.2%) and MPA in 68 (26.8%) patients. During the follow-up, 217
+  of 242 (89.7%) patients developed damage, and the median VDI score of the cohort
+  was 2 (IQR: 2). VDI scores were higher in the first period (1997-2011) than in the
+  second period (2011-2021) in the entire cohort (p = 0.012) and in patients with
+  GPA compared with MPA (p = 0.034). Five-year and overall survival rates were 88.1%
+  and 80.3% in the entire cohort; 87.8% and 81% in c-ANCA/PR3 ( +); 86.2% and 76%
+  in p-ANCA/MPO ( +) (Log-Rank: p = 0.35); 91% and 84.5% in GPA; 81% and 67.2% in
+  MPA patients (Log-Rank: p < 0.001). Development of malignancy, severe infection,
+  and active/persistent disease after the induction phase were associated with higher
+  mortality in patients with AAV. In our AAV cohort, permanent organ damage was detected
+  in the majority of the patients. Although the median VDI score decreased over time,
+  mortality did not change.'
+tags:
+- Vasculitis
+- Rheumatology
+featured: false
+links:
+  - type: custom
+    label: PubMed
+    icon: hero/link
+    url: https://pubmed.ncbi.nlm.nih.gov/40332571/
+
+---

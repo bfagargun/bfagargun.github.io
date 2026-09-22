@@ -1,0 +1,49 @@
+---
+title: Attitudes of caregivers of children labeled with drug allergy after delabeling
+  by provocation tests
+authors:
+- Şeyma Kaya Ağargün
+- me
+- Ayşe Süleyman
+- Sophia Tsabouri
+- Zeynep Ülker Altınel
+- Cevdet Ozdemir
+date: '2026-07-01'
+publication_types:
+- article-journal
+publication: '*Pediatric Allergy and Immunology*'
+hugoblox:
+  ids:
+    doi: 10.1111/pai.70435
+abstract: "Mislabeling children as drug-allergic leads to suboptimal, costly, and
+  potentially harmful treatments. Although drug provocation tests (DPTs) are the gold
+  standard for excluding drug hypersensitivity, the impact of these interventions
+  on caregivers' willingness to reuse delabeled drugs remains elusive. We evaluated
+  DPT outcomes and post-DPT drug use and caregiver attitudes in pediatric patients.\
+  \  We analyzed children who underwent DPTs for suspected drug allergy at a tertiary
+  pediatric allergy center between January 2019 and June 2023. Demographic and clinical
+  data were reviewed, and caregivers were contacted ≥6 months after DPT to assess
+  subsequent drug use and concerns.  A total of 254 DPTs were performed in 198 children
+  (55.1% male; median age: 58 months). Drug allergy was confirmed in 25.3% of patients
+  (50/198), corresponding to 22.0% of tests (56/254). Among 162 negative DPTs with
+  follow-up, the suspected drug was reused in 56.8% of cases; 92.4% were tolerated
+  while 7.6% resulted in mild reactions. Multivariable logistic regression identified
+  predictors of drug reuse: paracetamol (aOR: 7.40; 95% CI: 1.73-31.63; p = .007),
+  concomitant allergic disease (aOR: 2.51; 95% CI: 1.12-5.64; p = .026), self-referral
+  (aOR: 3.81; 95% CI: 1.12-12.95; p = .032), and younger age (aOR per month: 0.99;
+  95% CI: 0.98-1.00; p = .017). Anaphylaxis at index reaction was associated with
+  reduced reuse likelihood (aOR: 0.21; 95% CI: 0.06-0.76; p = .018).  Despite negative
+  DPT results, almost half of caregivers did not reuse the suspected drug, mostly
+  due to fear or miscommunication. These findings highlight the importance of post-DPT
+  education and structured follow-up to optimize delabeling outcomes."
+tags:
+- Drug Allergy
+- Pediatrics
+featured: false
+links:
+  - type: custom
+    label: PubMed
+    icon: hero/link
+    url: https://pubmed.ncbi.nlm.nih.gov/42482389/
+
+---
