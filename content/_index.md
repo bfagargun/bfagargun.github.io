@@ -33,6 +33,78 @@ sections:
         size: medium
         shape: circle
 
+  - block: research-areas
+    id: projects
+    content:
+      title: Research Projects
+      text: Ongoing and recent projects in inflammatory bowel disease, hepatology and AI/NLP for gastroenterology.
+      items:
+        - name: ELASTIBD
+          description: Transient elastography (FibroScan, CAP) study of liver fibrosis and steatosis in patients with inflammatory bowel disease compared with matched controls. Baseline cross-sectional results were published in Hepatology Research (2026); a prospective phase is in preparation. Role — coordinating investigator.
+          icon: hero/heart
+          status: active
+          topics:
+            - Inflammatory Bowel Disease
+            - MASLD
+            - Transient Elastography
+          cta:
+            text: Read the paper
+            url: /publications/agargun-2026-elastibd/
+        - name: Colonoscopy Report NLP
+          description: Natural-language processing over more than 11,000 colonoscopy reports — automated bowel-preparation quality classification (~92% accuracy) and its association with adenoma detection rate. Late-breaking oral at UEG Week 2025; DDW 2026 poster selected for the AGA Innovation Themed Walking Tour. Role — scientific lead.
+          icon: hero/document-magnifying-glass
+          status: active
+          topics:
+            - NLP
+            - Colonoscopy Quality
+            - Adenoma Detection Rate
+          cta:
+            text: See the talks
+            url: /events/
+        - name: UC Endoscopic–Histologic Discordance
+          description: Rule-based NLP pipelines that extract the Mayo Endoscopic Score and the Nancy Histological Index from Turkish endoscopy and pathology reports, used to quantify persistent histologic activity in endoscopic remission in ulcerative colitis. Manuscript under review; the pipelines are openly available.
+          icon: hero/code-bracket
+          status: active
+          topics:
+            - Ulcerative Colitis
+            - Histologic Remission
+            - Open-source NLP
+          cta:
+            text: Code on GitHub
+            url: https://github.com/bfagargun/uc-nlp-pipelines
+        - name: National IBD Epidemiology in Türkiye
+          description: Nationwide epidemiology of Crohn's disease and ulcerative colitis based on national health-system data (ICD-10 K50/K51), including regional variation in incidence, prevalence and care. Funded by the Health Institutes of Türkiye (TÜSEB), project 2026-A4-54032, with Prof. Filiz Akyüz.
+          icon: hero/globe-europe-africa
+          status: active
+          topics:
+            - Epidemiology
+            - Real-world Data
+            - Health Services
+        - name: AI-CrohnET
+          description: An enterography-centred artificial-intelligence programme for Crohn's disease covering strictures and fibrostenosis, inflammatory activity, transmural healing, endoscopic–radiologic discordance, postoperative recurrence and prognosis. In collaboration with the Bagci Lab, Northwestern University.
+          icon: hero/cpu-chip
+          status: planning
+          topics:
+            - Crohn's Disease
+            - MR/CT Enterography
+            - Deep Learning
+        - name: LLM-based Montreal Classification
+          description: Automated extraction of the Montreal classification of Crohn's disease and ulcerative colitis from endoscopy reports using NLP and large language models. Accepted as a poster at UEG Week 2026.
+          icon: hero/sparkles
+          status: active
+          topics:
+            - Large Language Models
+            - IBD Phenotyping
+            - Structured Reporting
+          cta:
+            text: UEG Week 2026
+            url: /events/ueg-week-2026-barcelona/
+      cta:
+        text: Çapa Gastroenterology research group
+        url: /capagastro/
+    design:
+      layout: cards
+
   - block: resume-experience
     id: home-experience
     content:
@@ -97,7 +169,7 @@ sections:
     id: contact
     content:
       title: Contact
-      subtitle: ""
+      subtitle: "**Open to collaboration** — datasets, multicentre studies, AI/NLP validation and clinical research. Get in touch by e-mail."
       visit_title: Clinic
       connect_title: Connect
       address:
