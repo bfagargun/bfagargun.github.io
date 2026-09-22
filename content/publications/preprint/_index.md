@@ -1,4 +1,0 @@
----
-title: "Preprints"
-type: publication
----
