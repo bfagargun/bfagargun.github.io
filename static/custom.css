@@ -1,9 +1,10 @@
-footer a[href*="hugoblox.com"] {
+/* Site-wide tweaks (loaded via layouts/_partials/hooks/head-end/custom-css.html) */
+
+/* Hide the "Made with Hugo Blox / Create yours" line while keeping the copyright notice. */
+footer p.powered-by:has(a[href*="hugoblox.com"]) {
   display: none !important;
 }
-
-footer .powered-by,
-footer .hb-powered-by,
-footer .site-footer__poweredby {
+/* Fallback for browsers without :has() support */
+footer a[href*="hugoblox.com"] {
   display: none !important;
 }

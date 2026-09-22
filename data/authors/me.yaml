@@ -2,87 +2,107 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Besim Fazil Agargun
+  display: Besim Fazıl Ağargün
   given: Besim Fazıl
   family: Ağargün
-  alternate: 'Besim Fazıl Ağargün'  
-  pronunciation: ''  
-  pronouns: 'Besim Fazıl Ağargün'  
+  alternate: 'Besim Fazil Agargun'   # ASCII form used in most indexes
+  pronunciation: ''
+  pronouns: ''
 postnominals:
   - MD
 status:
   icon: "🩺"
-role: Gastroenterology Fellow
-bio: Gastroenterology fellow at Istanbul University, Istanbul Faculty of Medicine. Clinical focus includes inflammatory bowel disease and advanced endoscopy, with research centered on real-world outcomes and AI in endoscopy and gastrointestinal practice.
- 
+role: Gastroenterology & Hepatology Fellow
+bio: |
+  Gastroenterology and hepatology fellow at Istanbul University, Istanbul Faculty of Medicine.
+  My clinical work centres on inflammatory bowel disease and diagnostic and therapeutic endoscopy;
+  my research combines real-world cohorts with natural-language processing and AI-assisted analytics —
+  including an NLP programme over more than 11,000 colonoscopy reports and the ELASTIBD transient
+  elastography study of liver fibrosis and steatosis in IBD. I am also a PhD candidate in clinical trials.
+
 affiliations:
   - name: Istanbul University, Istanbul Faculty of Medicine
     url: https://avesis.istanbul.edu.tr/bfagargun
- 
+
 links:
   - icon: at-symbol
     url: mailto:bfagargun@istanbul.edu.tr
     label: E-mail Me
-  - icon: brands/instagram
-    url: https://www.instagram.com/bfagargun/
-  - icon: brands/github
-    url: https://github.com/bfagargun
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/besim-fazil-agargun
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-3933-1881
+    label: ORCID
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?hl=en&user=MeNxgD4AAAAJ
+    label: Google Scholar
   - icon: academicons/pubmed
     url: https://pubmed.ncbi.nlm.nih.gov/?term=Agargun+BF%5BAuthor%5D&sort=date
- 
+    label: PubMed
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/besim-fazil-agargun
+    label: LinkedIn
+  - icon: brands/github
+    url: https://github.com/bfagargun
+    label: GitHub
+  - icon: brands/instagram
+    url: https://www.instagram.com/bfagargun/
+    label: Instagram
+
 interests:
   - Inflammatory Bowel Disease (IBD)
   - Advanced Endoscopy
   - Noninvasive Assessment of Liver Disease
-  - Artificial Intelligence in Endoscopy
+  - Natural Language Processing & AI in Endoscopy
   - AI-Assisted Clinical Decision Support
- 
+  - Clinical Trial Methodology
+
+# `year` is shown by the homepage biography block (single line);
+# `start`/`end` are used by the CV page timeline.
 education:
-  - degree: MD
-    institution: Istanbul University, Istanbul Faculty of Medicine
-    start: "2012"
-    end: "2018"
-    summary: |
-      Medical education and early clinical training.
- 
-  - degree: Residency, Internal Medicine
-    institution: Istanbul University, Istanbul Faculty of Medicine
-    start: "2018"
-    end: "2022"
- 
-  - degree: Fellowship, Gastroenterology
-    institution: Istanbul University, Istanbul Faculty of Medicine
-    start: "2024"
-    end: "Present"
-    summary: |
-      Clinical training in gastroenterology and hepatology.
- 
   - degree: PhD, Clinical Trials
     institution: Istanbul University
+    year: "2026 – present"
     start: "2026"
-    end: "Present"
- 
+    end: ""
+  - degree: Fellowship, Gastroenterology & Hepatology
+    institution: Istanbul University, Istanbul Faculty of Medicine
+    year: "2024 – present"
+    start: "2024"
+    end: ""
+    summary: |
+      Subspecialty training in gastroenterology and hepatology, including diagnostic and therapeutic endoscopy.
+  - degree: Residency, Internal Medicine
+    institution: Istanbul University, Istanbul Faculty of Medicine
+    year: "2018 – 2022"
+    start: "2018"
+    end: "2022"
+  - degree: MD
+    institution: Istanbul University, Istanbul Faculty of Medicine
+    year: "2012 – 2018"
+    start: "2012"
+    end: "2018"
+
 experience:
-  - role: Gastroenterology Fellow
+  - role: Gastroenterology & Hepatology Fellow
     org: Istanbul University, Istanbul Faculty of Medicine
     start: "2024"
-    end: "" 
+    end: ""
     summary: |
-      Clinical care in gastroenterology and hepatology; endoscopy unit practice.
-      Research in real-world cohorts and AI-assisted analytics.
- 
+      Clinical care in gastroenterology and hepatology; endoscopy unit practice (diagnostic and therapeutic
+      endoscopy, intestinal ultrasound, transient elastography). Scientific lead of an NLP programme over
+      more than 11,000 colonoscopy reports and coordinating investigator of the ELASTIBD study.
+  - role: Resident, Internal Medicine
+    org: Istanbul University, Istanbul Faculty of Medicine
+    start: "2018"
+    end: "2022"
+
 awards:
   - title: Best Poster Presentation Award
-    awarder: TGD
+    awarder: Turkish Society of Gastroenterology (TGD)
     date: "2025"
     summary: "Assessment of liver stiffness by transient elastography in heart failure: a cross-sectional study linking hepatic congestion with echocardiographic findings"
     icon: hero/trophy
   - title: Best Thesis Award
-    awarder: Istanbul Faculty of Medicine, Istanbul University
+    awarder: Istanbul University, Istanbul Faculty of Medicine
     date: "2023"
-    summary: "Evaluation of hepatobiliary pathologies using non-invasive methods (radiological, fibroscan and biochemical) in patients with inflammatory bowel disease"
+    summary: "Evaluation of hepatobiliary pathologies using non-invasive methods (radiological, FibroScan and biochemical) in patients with inflammatory bowel disease"
     icon: hero/trophy

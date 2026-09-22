@@ -1,13 +1,7 @@
 ---
-title: Recent & Upcoming Talks
+title: Talks
+summary: Oral presentations, moderated posters and session chairing at international congresses.
 cms_exclude: true
-#url: talk
 
-# View
-view: card
-
-# Optional cover image (relative to `assets/media/` folder).
-image:
-  caption: ''
-  filename: ''
+view: date-title-summary
 ---

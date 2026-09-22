@@ -1,0 +1,39 @@
+{{- /* Person structured data (schema.org) — helps search engines tie this site to the
+       ORCID / Scholar / LinkedIn / PubMed profiles and show the right knowledge panel. */ -}}
+{{- $me := index site.Data.authors "me" -}}
+{{- if and $me .IsHome -}}
+{{- $sameAs := slice -}}
+{{- range $me.links -}}
+  {{- if and .url (not (hasPrefix .url "mailto:")) -}}{{- $sameAs = $sameAs | append .url -}}{{- end -}}
+{{- end -}}
+{{- $avatar := resources.Get "media/authors/me.jpg" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.BaseURL }}#person",
+  "name": "{{ $me.name.display }}",
+  "alternateName": ["{{ $me.name.alternate }}", "Besim F. Ağargün", "Agargun BF"],
+  "givenName": "{{ $me.name.given }}",
+  "familyName": "{{ $me.name.family }}",
+  "honorificSuffix": "MD",
+  "jobTitle": "{{ $me.role }}",
+  "description": {{ site.Params.hugoblox.identity.description | jsonify | safeJS }},
+  "url": "{{ site.BaseURL }}",
+  {{- with $avatar }}
+  "image": "{{ (.Fill "800x800 Center").Permalink }}",
+  {{- end }}
+  "email": "mailto:bfagargun@istanbul.edu.tr",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Istanbul University, Istanbul Faculty of Medicine",
+    "url": "https://istanbultip.istanbul.edu.tr/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Istanbul", "addressCountry": "TR" }
+  },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Istanbul University, Istanbul Faculty of Medicine" },
+  "knowsAbout": ["Gastroenterology", "Hepatology", "Inflammatory Bowel Disease", "Endoscopy", "Transient Elastography", "Natural Language Processing", "Clinical Trials"],
+  "identifier": { "@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0002-3933-1881" },
+  "sameAs": {{ $sameAs | jsonify | safeJS }}
+}
+</script>
+{{- end -}}

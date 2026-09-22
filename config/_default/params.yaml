@@ -21,21 +21,19 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-    description: "Besim Fazıl Ağargün"
+    description: "Besim Fazıl Ağargün, MD — gastroenterology & hepatology fellow at Istanbul University, Istanbul Faculty of Medicine. Research on inflammatory bowel disease, advanced endoscopy, transient elastography and AI/NLP in gastroenterology."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "bfagargun"              # Twitter/X handle for Twitter Cards (without @)
-    site_icon: "favicon.png"
-    branding:
-  icon:
-    name: icon
+    # Favicon source: assets/media/icon.png (auto-resized by Hugo Blox)
+    site_icon: "icon.png"
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
   # Color and visual design system
   # ────────────────────────────────────────────────────────────────────────────
   theme:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
-    mode: dark
+    mode: system
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
     pack: "default"
     # Optional: Override theme pack colors
@@ -84,14 +82,14 @@ hugoblox:
   # Site header and navigation bar
   # ────────────────────────────────────────────────────────────────────────────
   header:
-    enable: false
+    enable: true
     style: navbar
     sticky: true
     align: center
     search: true
     theme_toggle: true
-    theme_picker: false   # <-- BUNU false yap
-    language_switcher: true
+    theme_picker: false
+    language_switcher: false
     # Call-to-action button
     cta:
       enable: false
@@ -105,7 +103,7 @@ hugoblox:
   footer:
     # Footer style variant
     style: minimal                      # minimal | columns | centered
-    language_switcher: true
+    language_switcher: false
     # Custom footer text (HTML supported)
     text: ""
 
@@ -144,8 +142,8 @@ hugoblox:
       allow:
         - /
       disallow: []
-      note: "Guidance for AI crawlers - customize to match your public content."
-      contact: ""
+      note: "Personal academic website of Besim Fazıl Ağargün, MD (gastroenterology & hepatology, Istanbul University). Publications, talks and CV are public."
+      contact: "bfagargun@istanbul.edu.tr"
 
   # ────────────────────────────────────────────────────────────────────────────
   # CONTENT
@@ -160,7 +158,7 @@ hugoblox:
       enable: true
     # Reading time estimates
     reading_time:
-      enable: true
+      enable: false
     # Academic citations
     citations:
       style: apa                        # apa | mla | chicago | ieee
@@ -281,7 +279,7 @@ hugoblox:
     # Requires: HugoBlox Premium to support HugoBlox via alternative means
     # Note: Even with Premium, you can keep this false to support open source!
     # Get Premium: https://hugoblox.com/premium
-    hide_attribution: true
+    hide_attribution: false             # needs Premium; the footer link is hidden via static/custom.css instead
     
     # Affiliate referral code for rewards program
     # Join affiliate program: https://hugoblox.com/affiliates
