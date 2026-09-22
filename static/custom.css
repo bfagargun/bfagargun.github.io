@@ -37,3 +37,8 @@ footer a[href*="hugoblox.com"] {
   #home-bio .flex.flex-wrap.justify-center.gap-4 { gap: .6rem; flex-wrap: nowrap; }
   #home-bio .flex.flex-wrap.justify-center.gap-4 > a { width: 2.75rem; height: 2.75rem; flex: 0 0 auto; }
 }
+
+/* Restore bullets for markdown lists inside talk/publication abstracts */
+.max-w-prose.grid ul { list-style: disc; padding-left: 1.25rem; margin: .25rem 0; }
+.max-w-prose.grid ul li { margin: .35rem 0; }
+.max-w-prose.grid p + p { margin-top: .6rem; }

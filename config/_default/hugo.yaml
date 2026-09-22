@@ -25,6 +25,10 @@ cascade:
       path: /slides/**
       kind: page
     outputs: [HTML, present]
+  # Hide "X min read" on publication and talk pages
+  - _target:
+      kind: page
+    reading_time: false
 
 ############################
 ## ADVANCED

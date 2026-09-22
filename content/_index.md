@@ -47,7 +47,7 @@ sections:
       title: Academic Service & Memberships
       text: |-
         - **Peer reviewer** — *American Journal of Gastroenterology*, *Inflammatory Bowel Diseases*, *Journal of Clinical Gastroenterology*
-        - **Individual member** — European Society of Gastrointestinal Endoscopy (ESGE)
+        - **Society memberships** — European Society of Gastrointestinal Endoscopy (ESGE), American Society for Gastrointestinal Endoscopy (ASGE), European Crohn's and Colitis Organisation (ECCO), Crohn's & Colitis Foundation (USA)
         - **Young Co-Chair** — UEG Week 2026, moderated poster session "Therapeutics in IBD: Real-world experience (I)"
         - Moderator and lead presenter in 20+ journal clubs and departmental academic sessions
     design:
@@ -116,6 +116,10 @@ sections:
           url: https://www.linkedin.com/in/besim-fazil-agargun
         - icon: brands/github
           url: https://github.com/bfagargun
+        - icon: brands/instagram
+          url: https://www.instagram.com/bfagargun/
+        - icon: brands/x
+          url: https://x.com/bfagargun
       map_url: https://maps.app.goo.gl/Ey4eb2UkBD5aQzT97
       show_form: false
 ---
