@@ -2,10 +2,10 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Besim Fazıl Ağargün
-  given: Besim Fazıl
-  family: Ağargün
-  alternate: 'Besim Fazil Agargun'   # ASCII form used in most indexes
+  display: Besim Fazil Agargun
+  given: Besim Fazil
+  family: Agargun
+  alternate: 'Besim Fazıl Ağargün'   # Turkish spelling — kept for search engines (schema.org alternateName, meta)
   pronunciation: ''
   pronouns: ''
 postnominals:

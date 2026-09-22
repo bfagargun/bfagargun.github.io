@@ -1,6 +1,6 @@
 # besimagargun.com
 
-Personal academic website of Besim Fazıl Ağargün, MD — built with [Hugo](https://gohugo.io) and the
+Personal academic website of Besim Fazil Agargun (Besim Fazıl Ağargün), MD — built with [Hugo](https://gohugo.io) and the
 [Hugo Blox](https://hugoblox.com) *Academic CV* template, deployed to GitHub Pages by
 `.github/workflows/deploy.yml` on every push to `main`.
 

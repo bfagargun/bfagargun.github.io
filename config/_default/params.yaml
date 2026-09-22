@@ -13,7 +13,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Besim Fazıl Ağargün"
+    name: "Besim Fazil Agargun"
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
@@ -21,7 +21,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-    description: "Besim Fazıl Ağargün, MD — gastroenterology & hepatology fellow at Istanbul University, Istanbul Faculty of Medicine. Research on inflammatory bowel disease, advanced endoscopy, transient elastography and AI/NLP in gastroenterology."
+    description: "Besim Fazil Agargun (Besim Fazıl Ağargün), MD — gastroenterology & hepatology fellow at Istanbul University, Istanbul Faculty of Medicine. Research on inflammatory bowel disease, advanced endoscopy, transient elastography and AI/NLP in gastroenterology."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "bfagargun"              # Twitter/X handle for Twitter Cards (without @)
@@ -33,7 +33,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   theme:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
-    mode: system
+    mode: dark
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
     pack: "default"
     # Optional: Override theme pack colors
@@ -87,7 +87,7 @@ hugoblox:
     sticky: true
     align: center
     search: true
-    theme_toggle: true
+    theme_toggle: false   # site is always dark
     theme_picker: false
     language_switcher: false
     # Call-to-action button
@@ -112,7 +112,7 @@ hugoblox:
   # Legal notices and licensing
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
-    notice: "© {year} Besim Fazıl Ağargün"
+    notice: "© {year} Besim Fazil Agargun"
     license:
       type: custom
 
@@ -124,7 +124,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   seo:
     # Browser tab title override (defaults to identity.name if not set)
-    title: "Besim Fazıl Ağargün"
+    title: "Besim Fazil Agargun"
     # For local_business identity type only
     location:
       address:
@@ -142,7 +142,7 @@ hugoblox:
       allow:
         - /
       disallow: []
-      note: "Personal academic website of Besim Fazıl Ağargün, MD (gastroenterology & hepatology, Istanbul University). Publications, talks and CV are public."
+      note: "Personal academic website of Besim Fazil Agargun (Besim Fazıl Ağargün), MD (gastroenterology & hepatology, Istanbul University). Publications, talks and CV are public."
       contact: "bfagargun@istanbul.edu.tr"
 
   # ────────────────────────────────────────────────────────────────────────────
