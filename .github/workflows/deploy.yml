@@ -28,8 +28,9 @@ jobs:
       - name: Collect site files (data/ and tools/ stay in the repo only)
         run: |
           mkdir _site
-          rsync -a --exclude '.git' --exclude '.github' --exclude '_site' \
-                --exclude 'data' --exclude 'tools' --exclude 'README.md' ./ _site/
+          tar --exclude=./.git --exclude=./.github --exclude=./_site \
+              --exclude=./data --exclude=./tools --exclude=./README.md --exclude=./.gitignore -cf - . | tar -xf - -C _site
+          ls -la _site
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
