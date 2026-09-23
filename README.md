@@ -11,10 +11,11 @@ Kişisel akademik site. Düz HTML ve CSS ile yazılmıştır; tema, paket veya d
 | `publications/` | Yayın listesi ve her yayının kendi sayfası (betik üretir, elle düzenlemeyin) |
 | `events/` | Konuşma listesi ve sayfaları (betik üretir, elle düzenlemeyin) |
 | `404.html` | Bulunamayan sayfa |
-| `assets/css/site.css` | Tüm görünüm; renkler dosyanın en başında |
+| `assets/css/site.css` | Tüm görünüm; renkler dosyanın başında (`--accent` vurgu rengidir) |
 | `assets/js/site.js` | Yalnızca yayınlardaki "Cite" penceresi |
-| `assets/icons.svg` | Sitedeki ikonlar |
-| `assets/img/` | Fotoğraf, paylaşım görseli (`og.png`), sekme simgeleri |
+| `assets/icons.svg` | Sitedeki ikonlar ve logo (`#gi`) |
+| `assets/fonts/` | Yazı tipleri: Source Serif 4 (başlıklar) ve Source Sans 3 (metin), SIL Open Font License |
+| `assets/img/` | Fotoğraf, paylaşım görseli (`og.png`), sekme simgeleri, logo (`logo.svg`) |
 | `uploads/` | CV PDF dosyası |
 | `data/publications.json` | Yayın bilgileri |
 | `data/talks.json` | Konuşma bilgileri |
@@ -33,7 +34,7 @@ Kişisel akademik site. Düz HTML ve CSS ile yazılmıştır; tema, paket veya d
 `<!-- BEGIN:... -->` ve `<!-- END:... -->` işaretleri arasındaki bloklar betikle güncellenir:
 
 - `selected-publications` ve `recent-talks`: `data/` dosyalarından doldurulur. Buraya elle yazmayın.
-- `experience`, `service`, `awards`: ana sayfada elle düzenlenir, CV sayfasına betik kopyalar. Değişiklikten sonra `python3 tools/build.py` çalıştırın.
+- `experience`, `education`, `service`, `awards`: ana sayfada elle düzenlenir, CV sayfasına betik kopyalar. Değişiklikten sonra `python3 tools/build.py` çalıştırın.
 
 ## Yayın eklemek
 
@@ -49,7 +50,7 @@ Elle eklemek için `data/publications.json` içine aynı biçimde bir kayıt ekl
 
 ## Proje eklemek veya değiştirmek
 
-`index.html` içinde "RESEARCH PROJECTS" bölümündeki bir `<li class="project">` bloğunu kopyalayıp başlığı değiştirin. Durum etiketi sınıfları: `status-active` (Active), `status-planning` (Planning), `status-published` (Published). İkon adları `assets/icons.svg` içindeki `id` değerleridir.
+`index.html` içinde "RESEARCH PROJECTS" bölümündeki bir `<li>` satırını kopyalayıp başlığı değiştirin. Numaralar (01, 02...) kendiliğinden verilir. Durum etiketi sınıfları: `status-active` (Active), `status-planning` (Planning), `status-published` (Published). Projeler bilerek yalnızca başlıkla gösterilir; yöntem veya ayrıntı yazılmaz.
 
 ## Yazım kuralları
 

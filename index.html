@@ -27,6 +27,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/source-sans-3-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/site.css">
 <script type="application/ld+json">
 {
@@ -74,291 +76,272 @@
 </script>
 </head>
 <body>
-<main>
 
 <!-- ============ ABOUT ============ -->
-<section id="home-bio" class="bio">
-  <div class="container bio-grid">
-
-    <div class="profile">
-      <div class="avatar-wrap">
-        <picture>
-          <source srcset="assets/img/me-400.webp" type="image/webp">
-          <img class="avatar" src="assets/img/me-400.jpg" width="200" height="200" alt="Besim Fazil Agargun">
-        </picture>
-        <span class="avatar-badge" title="Physician"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#stethoscope"></use></svg></span>
-      </div>
+<header class="hero wrap" id="home-bio">
+  <div class="hero-grid">
+    <picture class="portrait">
+      <source srcset="assets/img/me-400.webp" type="image/webp">
+      <img src="assets/img/me-400.jpg" width="184" height="184" alt="Besim Fazil Agargun">
+    </picture>
+    <div>
+      <p class="eyebrow"><svg class="logo" aria-hidden="true" viewBox="0 0 231 346"><use href="assets/icons.svg#gi"></use></svg>Gastroenterology · Hepatology</p>
       <h1>Besim Fazil Agargun</h1>
-      <p class="role">Gastroenterology Fellow</p>
-      <p class="affil"><a href="https://avesis.istanbul.edu.tr/bfagargun" target="_blank" rel="noopener">Istanbul University, Istanbul Faculty of Medicine</a></p>
-      <ul class="social">
-        <li><a href="mailto:bfagargun@istanbul.edu.tr" title="E-mail" aria-label="E-mail"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#at-symbol"></use></svg></a></li>
-        <li><a href="https://scholar.google.com/citations?hl=en&amp;user=MeNxgD4AAAAJ" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#google-scholar"></use></svg></a></li>
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Agargun+BF%5BAuthor%5D&amp;sort=date" target="_blank" rel="noopener" title="PubMed" aria-label="PubMed"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#pubmed"></use></svg></a></li>
-        <li><a href="https://www.linkedin.com/in/besim-fazil-agargun" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#linkedin"></use></svg></a></li>
-        <li><a href="https://github.com/bfagargun" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg></a></li>
-        <li><a href="https://www.instagram.com/bfagargun/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#instagram"></use></svg></a></li>
-      </ul>
-    </div>
-
-    <div class="bio-main">
-      <div class="bio-block">
-        <div class="block-head">
-          <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#identification"></use></svg></span>
-          <h2>Research Focus</h2>
-        </div>
-        <p class="lead-text">My clinical and academic work focuses on inflammatory bowel disease (IBD), metabolic dysfunction-associated steatotic liver disease (MASLD), advanced endoscopy, and artificial intelligence applications in gastroenterology.</p>
-        <a class="btn-primary" href="uploads/Agargun-CV-2026-09.pdf"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#document-arrow-down"></use></svg>Download CV</a>
-      </div>
-
-      <div class="bio-block">
-        <div class="block-head">
-          <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#academic-cap"></use></svg></span>
-          <h2>Education</h2>
-        </div>
-        <div class="edu-grid">
-          <div class="edu-card">
-            <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#academic-cap"></use></svg></span>
-            <div><h3>PhD, Clinical Trials</h3><p class="years">2026 - present</p><p class="inst">Istanbul University</p></div>
-          </div>
-          <div class="edu-card">
-            <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#academic-cap"></use></svg></span>
-            <div><h3>Fellowship, Gastroenterology &amp; Hepatology</h3><p class="years">2024 - present</p><p class="inst">Istanbul University, Istanbul Faculty of Medicine</p></div>
-          </div>
-          <div class="edu-card">
-            <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#academic-cap"></use></svg></span>
-            <div><h3>Residency, Internal Medicine</h3><p class="years">2018 - 2022</p><p class="inst">Istanbul University, Istanbul Faculty of Medicine</p></div>
-          </div>
-          <div class="edu-card">
-            <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#academic-cap"></use></svg></span>
-            <div><h3>MD</h3><p class="years">2012 - 2018</p><p class="inst">Istanbul University, Istanbul Faculty of Medicine</p></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bio-block">
-        <div class="block-head">
-          <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sparkles"></use></svg></span>
-          <h2>Research Interests</h2>
-        </div>
-        <ul class="chips">
-          <li>Inflammatory Bowel Disease (IBD)</li>
-          <li>Advanced Endoscopy</li>
-          <li>Noninvasive Assessment of Liver Disease</li>
-          <li>Natural Language Processing &amp; AI in Endoscopy</li>
-          <li>AI-Assisted Clinical Decision Support</li>
-          <li>Clinical Trial Methodology</li>
+      <p class="role"><strong>Gastroenterology Fellow</strong><br><a href="https://avesis.istanbul.edu.tr/bfagargun" target="_blank" rel="noopener">Istanbul University, Istanbul Faculty of Medicine</a></p>
+      <p class="focus">My clinical and academic work focuses on inflammatory bowel disease (IBD), metabolic dysfunction-associated steatotic liver disease (MASLD), advanced endoscopy, and artificial intelligence applications in gastroenterology.</p>
+      <div class="hero-actions">
+        <a class="btn" href="uploads/Agargun-CV-2026-09.pdf"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#document-arrow-down"></use></svg>Download CV</a>
+        <ul class="links">
+          <li><a href="mailto:bfagargun@istanbul.edu.tr" title="E-mail" aria-label="E-mail"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#at-symbol"></use></svg></a></li>
+          <li><a href="https://scholar.google.com/citations?hl=en&amp;user=MeNxgD4AAAAJ" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#google-scholar"></use></svg></a></li>
+          <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Agargun+BF%5BAuthor%5D&amp;sort=date" target="_blank" rel="noopener" title="PubMed" aria-label="PubMed"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#pubmed"></use></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/besim-fazil-agargun" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#linkedin"></use></svg></a></li>
+          <li><a href="https://github.com/bfagargun" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg></a></li>
+          <li><a href="https://www.instagram.com/bfagargun/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#instagram"></use></svg></a></li>
         </ul>
       </div>
     </div>
-
   </div>
-</section>
+</header>
 
-<!-- ============ RESEARCH PROJECTS ============ -->
-<!-- Status options: status-active (Active), status-planning (Planning), status-published (Published) -->
-<section id="projects" class="section">
-  <div class="container">
-    <h2 class="section-title">Research Projects</h2>
-    <ul class="project-grid">
-      <li class="project">
-        <div class="project-band"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#heart"></use></svg><span class="status status-active">Active</span></div>
-        <div class="project-body">
-          <h3>ELASTIBD: Liver Fibrosis and Steatosis in IBD</h3>
-          <a class="project-link" href="publications/agargun-2026-elastibd/">Published paper <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"></use></svg></a>
-        </div>
-      </li>
-      <li class="project">
-        <div class="project-band"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#document-magnifying-glass"></use></svg><span class="status status-active">Active</span></div>
-        <div class="project-body">
-          <h3>NLP for Colonoscopy Quality</h3>
-          <a class="project-link" href="events/">Talks <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"></use></svg></a>
-        </div>
-      </li>
-      <li class="project">
-        <div class="project-band"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#code-bracket"></use></svg><span class="status status-active">Active</span></div>
-        <div class="project-body"><h3>NLP in Ulcerative Colitis</h3></div>
-      </li>
-      <li class="project">
-        <div class="project-band"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe-europe-africa"></use></svg><span class="status status-active">Active</span></div>
-        <div class="project-body"><h3>National IBD Epidemiology in Türkiye (TÜSEB)</h3></div>
-      </li>
-      <li class="project">
-        <div class="project-band"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cpu-chip"></use></svg><span class="status status-planning">Planning</span></div>
-        <div class="project-body"><h3>AI in Crohn's Disease Imaging</h3></div>
-      </li>
-      <li class="project">
-        <div class="project-band"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sparkles"></use></svg><span class="status status-active">Active</span></div>
-        <div class="project-body"><h3>Large Language Models for IBD Phenotyping</h3></div>
-      </li>
+<main>
+
+<!-- ============ RESEARCH INTERESTS ============ -->
+<section class="row wrap" id="interests">
+  <h2 class="row-title">Research Interests</h2>
+  <div class="row-body">
+    <ul class="interests">
+      <li>Inflammatory bowel disease (IBD)</li>
+      <li>Advanced endoscopy</li>
+      <li>Noninvasive assessment of liver disease</li>
+      <li>Natural language processing &amp; AI in endoscopy</li>
+      <li>AI-assisted clinical decision support</li>
+      <li>Clinical trial methodology</li>
     </ul>
   </div>
 </section>
 
+<!-- ============ RESEARCH PROJECTS ============ -->
+<!-- Status: status-active (Active), status-planning (Planning), status-published (Published) -->
+<section class="row wrap" id="projects">
+  <h2 class="row-title">Research Projects</h2>
+  <div class="row-body">
+    <ol class="projects">
+      <li><div><h3>ELASTIBD: Liver Fibrosis and Steatosis in IBD</h3><p class="meta"><span class="status status-active">Active</span><a href="publications/agargun-2026-elastibd/">Published paper</a></p></div></li>
+      <li><div><h3>NLP for Colonoscopy Quality</h3><p class="meta"><span class="status status-active">Active</span><a href="events/">Talks</a></p></div></li>
+      <li><div><h3>NLP in Ulcerative Colitis</h3><p class="meta"><span class="status status-active">Active</span></p></div></li>
+      <li><div><h3>National IBD Epidemiology in Türkiye (TÜSEB)</h3><p class="meta"><span class="status status-active">Active</span></p></div></li>
+      <li><div><h3>AI in Crohn's Disease Imaging</h3><p class="meta"><span class="status status-planning">Planning</span></p></div></li>
+      <li><div><h3>Large Language Models for IBD Phenotyping</h3><p class="meta"><span class="status status-active">Active</span></p></div></li>
+    </ol>
+  </div>
+</section>
+
 <!-- ============ EXPERIENCE (also copied to the CV page by tools/build.py) ============ -->
-<section id="home-experience" class="section">
-  <h2 class="section-title">Experience</h2>
-  <div class="timeline-wrap">
+<section class="row wrap" id="home-experience">
+  <h2 class="row-title">Experience</h2>
+  <div class="row-body">
 <!-- BEGIN:experience -->
-    <ol class="timeline">
+    <ol class="entries">
       <li>
-        <span class="timeline-dot"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#briefcase"></use></svg></span>
-        <div class="t-card">
-          <div class="t-head">
-            <h3>Gastroenterology &amp; Hepatology Fellow</h3>
-            <span class="t-date"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"></use></svg><span>2024 - <span class="now">Present</span></span></span>
-          </div>
-          <span class="t-org">Istanbul University, Istanbul Faculty of Medicine</span>
-          <p class="t-text">Clinical care in gastroenterology and hepatology; endoscopy unit practice (diagnostic and therapeutic endoscopy, intestinal ultrasound, transient elastography). Scientific lead of an NLP programme over more than 11,000 colonoscopy reports and coordinating investigator of the ELASTIBD study.</p>
-        </div>
+        <div class="entry-head"><h3>Gastroenterology &amp; Hepatology Fellow</h3><span class="when">2024 - present</span></div>
+        <p class="where">Istanbul University, Istanbul Faculty of Medicine</p>
+        <p class="desc">Clinical care in gastroenterology and hepatology; endoscopy unit practice (diagnostic and therapeutic endoscopy, intestinal ultrasound, transient elastography). Scientific lead of an NLP programme over more than 11,000 colonoscopy reports and coordinating investigator of the ELASTIBD study.</p>
       </li>
       <li>
-        <span class="timeline-dot"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#briefcase"></use></svg></span>
-        <div class="t-card">
-          <div class="t-head">
-            <h3>Resident, Internal Medicine</h3>
-            <span class="t-date"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"></use></svg><span>2018 - 2022</span></span>
-          </div>
-          <span class="t-org">Istanbul University, Istanbul Faculty of Medicine</span>
-        </div>
+        <div class="entry-head"><h3>Resident, Internal Medicine</h3><span class="when">2018 - 2022</span></div>
+        <p class="where">Istanbul University, Istanbul Faculty of Medicine</p>
       </li>
     </ol>
 <!-- END:experience -->
   </div>
 </section>
 
+<!-- ============ EDUCATION (also copied to the CV page) ============ -->
+<section class="row wrap" id="education">
+  <h2 class="row-title">Education</h2>
+  <div class="row-body">
+<!-- BEGIN:education -->
+    <ol class="entries">
+      <li>
+        <div class="entry-head"><h3>PhD, Clinical Trials</h3><span class="when">2026 - present</span></div>
+        <p class="where">Istanbul University</p>
+      </li>
+      <li>
+        <div class="entry-head"><h3>Fellowship, Gastroenterology &amp; Hepatology</h3><span class="when">2024 - present</span></div>
+        <p class="where">Istanbul University, Istanbul Faculty of Medicine</p>
+        <p class="desc">Subspecialty training in gastroenterology and hepatology, including diagnostic and therapeutic endoscopy.</p>
+      </li>
+      <li>
+        <div class="entry-head"><h3>Residency, Internal Medicine</h3><span class="when">2018 - 2022</span></div>
+        <p class="where">Istanbul University, Istanbul Faculty of Medicine</p>
+      </li>
+      <li>
+        <div class="entry-head"><h3>MD</h3><span class="when">2012 - 2018</span></div>
+        <p class="where">Istanbul University, Istanbul Faculty of Medicine</p>
+      </li>
+    </ol>
+<!-- END:education -->
+  </div>
+</section>
+
 <!-- ============ ACADEMIC SERVICE (also copied to the CV page) ============ -->
-<section id="service" class="section">
-  <h2 class="section-title">Academic Service &amp; Memberships</h2>
-  <div class="prose-width">
+<section class="row wrap" id="service">
+  <h2 class="row-title">Academic Service &amp; Memberships</h2>
+  <div class="row-body">
 <!-- BEGIN:service -->
-    <ul class="service-list">
-      <li><strong>Peer reviewer:</strong> <em>American Journal of Gastroenterology</em>, <em>Inflammatory Bowel Diseases</em>, <em>Journal of Clinical Gastroenterology</em></li>
-      <li><strong>Society memberships:</strong> European Society of Gastrointestinal Endoscopy (ESGE), American Society for Gastrointestinal Endoscopy (ASGE), European Crohn's and Colitis Organisation (ECCO), Crohn's &amp; Colitis Foundation, Turkish Inflammatory Bowel Disease Association (IBHD), Turkish Association for the Study of the Liver (TKAD)</li>
-      <li><strong>Young Co-Chair:</strong> UEG Week 2026, moderated poster session “Therapeutics in IBD: Real-world experience (I)”</li>
-    </ul>
+    <dl class="facts">
+      <dt>Peer reviewer</dt>
+      <dd><em>American Journal of Gastroenterology</em><br><em>Inflammatory Bowel Diseases</em><br><em>Journal of Clinical Gastroenterology</em></dd>
+      <dt>Memberships</dt>
+      <dd>European Society of Gastrointestinal Endoscopy (ESGE)<br>American Society for Gastrointestinal Endoscopy (ASGE)<br>European Crohn's and Colitis Organisation (ECCO)<br>Crohn's &amp; Colitis Foundation<br>Turkish Inflammatory Bowel Disease Association (IBHD)<br>Turkish Association for the Study of the Liver (TKAD)</dd>
+      <dt>Faculty roles</dt>
+      <dd>Young Co-Chair, UEG Week 2026: moderated poster session “Therapeutics in IBD: Real-world experience (I)”</dd>
+    </dl>
 <!-- END:service -->
   </div>
 </section>
 
 <!-- ============ SELECTED PUBLICATIONS (filled by tools/build.py from data/publications.json, "featured": true) ============ -->
-<section id="home-pubs" class="section">
-  <h2 class="section-title">Selected Publications</h2>
-  <div class="narrow">
+<section class="row wrap" id="home-pubs">
+  <h2 class="row-title">Selected Publications</h2>
+  <div class="row-body">
 <!-- BEGIN:selected-publications -->
-<ol class="pub-list">
-<li class="pub"><span class="authors"><span class="me">Besim Fazil Agargun</span>, Ibrahim Volkan Senkal, Aynura Rustamzada, et al.</span> (2026). <a class="title" href="publications/agargun-2026-elastibd/">Liver Fibrosis and Steatosis in Inflammatory Bowel Disease: A Cross-Sectional Matched-Control Transient Elastography Study (ELASTIBD)</a>. <span class="journal">Hepatology Research</span>.<div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/41669978/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#link"></use></svg>PubMed</a><a href="publications/agargun-2026-elastibd/cite.bib" data-cite><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#document-duplicate"></use></svg>Cite</a><a href="https://doi.org/10.1111/hepr.70136" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#link"></use></svg>DOI</a></div></li>
-<li class="pub"><span class="authors">Filiz Akyüz, <span class="me">Besim Fazil Agargun</span>, Özlen Atuğ, et al.</span> (2025). <a class="title" href="publications/akyuz-2025-ibdtrends/">Trends in Inflammatory Bowel Diseases Across a Eurasian Crossroad: A Decade of Multicenter Data</a>. <span class="journal">Journal of Clinical Gastroenterology</span>.<div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/41397153/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#link"></use></svg>PubMed</a><a href="publications/akyuz-2025-ibdtrends/cite.bib" data-cite><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#document-duplicate"></use></svg>Cite</a><a href="https://doi.org/10.1097/MCG.0000000000002296" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#link"></use></svg>DOI</a></div></li>
-<li class="pub"><span class="authors">Murat Bektaş, Bilger Çavuş, <span class="me">Besim Fazil Agargun</span>, et al.</span> (2025). <a class="title" href="publications/bektas-2025-elastography/">Transient elastography measurements of the liver and transplanted kidney in patients with AA amyloidosis: a cross-sectional comparative study</a>. <span class="journal">Rheumatology International</span>.<div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/40593362/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#link"></use></svg>PubMed</a><a href="publications/bektas-2025-elastography/cite.bib" data-cite><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#document-duplicate"></use></svg>Cite</a><a href="https://doi.org/10.1007/s00296-025-05906-3" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#link"></use></svg>DOI</a></div></li>
-<li class="pub"><span class="authors">Murat Bektas, Nevzat Koca, Emin Oguz, …, <span class="me">Besim Fazil Agargun</span>, et al.</span> (2024). <a class="title" href="publications/bektas-2024-aaamyloidosis/">Characteristics and course of patients with AA amyloidosis: single centre experience with 174 patients from Turkey</a>. <span class="journal">Rheumatology (Oxford)</span>.<div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/37738242/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#link"></use></svg>PubMed</a><a href="publications/bektas-2024-aaamyloidosis/cite.bib" data-cite><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#document-duplicate"></use></svg>Cite</a><a href="https://doi.org/10.1093/rheumatology/kead465" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#link"></use></svg>DOI</a></div></li>
-<li class="pub"><span class="authors">Shirkhan Amikishiyev, M Guven Gunver, Murat Bektas, …, <span class="me">Besim Fazil Agargun</span>, et al.</span> (2023). <a class="title" href="publications/amikishiyev-2023-hyperinflammation/">Criteria for Hyperinflammation Developing in COVID-19: Analysis of 2 Cohorts From Different Periods of the Pandemic</a>. <span class="journal">Arthritis &amp; Rheumatology</span>.<div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/36508470/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#link"></use></svg>PubMed</a><a href="publications/amikishiyev-2023-hyperinflammation/cite.bib" data-cite><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#document-duplicate"></use></svg>Cite</a><a href="https://doi.org/10.1002/art.42417" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#link"></use></svg>DOI</a></div></li>
-</ol>
+    <ol class="pubs">
+      <li>
+        <a class="pub-title" href="publications/agargun-2026-elastibd/">Liver Fibrosis and Steatosis in Inflammatory Bowel Disease: A Cross-Sectional Matched-Control Transient Elastography Study (ELASTIBD)</a>
+        <p class="pub-authors"><span class="me">Besim Fazil Agargun</span>, Ibrahim Volkan Senkal, Aynura Rustamzada, et al.</p>
+        <p class="pub-venue"><em>Hepatology Research</em>, 2026</p>
+        <p class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/41669978/" target="_blank" rel="noopener">PubMed</a><a href="publications/agargun-2026-elastibd/cite.bib" data-cite>Cite</a><a href="https://doi.org/10.1111/hepr.70136" target="_blank" rel="noopener">DOI</a></p>
+      </li>
+      <li>
+        <a class="pub-title" href="publications/akyuz-2025-ibdtrends/">Trends in Inflammatory Bowel Diseases Across a Eurasian Crossroad: A Decade of Multicenter Data</a>
+        <p class="pub-authors">Filiz Akyüz, <span class="me">Besim Fazil Agargun</span>, Özlen Atuğ, et al.</p>
+        <p class="pub-venue"><em>Journal of Clinical Gastroenterology</em>, 2025</p>
+        <p class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/41397153/" target="_blank" rel="noopener">PubMed</a><a href="publications/akyuz-2025-ibdtrends/cite.bib" data-cite>Cite</a><a href="https://doi.org/10.1097/MCG.0000000000002296" target="_blank" rel="noopener">DOI</a></p>
+      </li>
+      <li>
+        <a class="pub-title" href="publications/bektas-2025-elastography/">Transient elastography measurements of the liver and transplanted kidney in patients with AA amyloidosis: a cross-sectional comparative study</a>
+        <p class="pub-authors">Murat Bektaş, Bilger Çavuş, <span class="me">Besim Fazil Agargun</span>, et al.</p>
+        <p class="pub-venue"><em>Rheumatology International</em>, 2025</p>
+        <p class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/40593362/" target="_blank" rel="noopener">PubMed</a><a href="publications/bektas-2025-elastography/cite.bib" data-cite>Cite</a><a href="https://doi.org/10.1007/s00296-025-05906-3" target="_blank" rel="noopener">DOI</a></p>
+      </li>
+      <li>
+        <a class="pub-title" href="publications/bektas-2024-aaamyloidosis/">Characteristics and course of patients with AA amyloidosis: single centre experience with 174 patients from Turkey</a>
+        <p class="pub-authors">Murat Bektas, Nevzat Koca, Emin Oguz, …, <span class="me">Besim Fazil Agargun</span>, et al.</p>
+        <p class="pub-venue"><em>Rheumatology (Oxford)</em>, 2024</p>
+        <p class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/37738242/" target="_blank" rel="noopener">PubMed</a><a href="publications/bektas-2024-aaamyloidosis/cite.bib" data-cite>Cite</a><a href="https://doi.org/10.1093/rheumatology/kead465" target="_blank" rel="noopener">DOI</a></p>
+      </li>
+      <li>
+        <a class="pub-title" href="publications/amikishiyev-2023-hyperinflammation/">Criteria for Hyperinflammation Developing in COVID-19: Analysis of 2 Cohorts From Different Periods of the Pandemic</a>
+        <p class="pub-authors">Shirkhan Amikishiyev, M Guven Gunver, Murat Bektas, …, <span class="me">Besim Fazil Agargun</span>, et al.</p>
+        <p class="pub-venue"><em>Arthritis &amp; Rheumatology</em>, 2023</p>
+        <p class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/36508470/" target="_blank" rel="noopener">PubMed</a><a href="publications/amikishiyev-2023-hyperinflammation/cite.bib" data-cite>Cite</a><a href="https://doi.org/10.1002/art.42417" target="_blank" rel="noopener">DOI</a></p>
+      </li>
+    </ol>
 <!-- END:selected-publications -->
-    <p class="more"><a class="btn-quiet" href="publications/">All publications <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chevron-right"></use></svg></a></p>
+    <a class="more-link" href="publications/">All publications <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"></use></svg></a>
   </div>
 </section>
 
 <!-- ============ TALKS (filled by tools/build.py from data/talks.json, latest 3) ============ -->
-<section id="home-talks" class="section">
-  <h2 class="section-title">Talks &amp; Presentations</h2>
-  <div class="narrow">
+<section class="row wrap" id="home-talks">
+  <h2 class="row-title">Talks &amp; Presentations</h2>
+  <div class="row-body">
 <!-- BEGIN:recent-talks -->
-<ol class="talk-list">
-<li class="talk">
-  <time datetime="2026-10-17">Oct 17, 2026</time>
-  <div>
-    <h3><a href="events/ueg-week-2026-barcelona/">UEG Week 2026: Young Co-Chair and three abstract presentations</a></h3>
-    <p class="where">UEG Week 2026 · Barcelona, Spain</p>
-    <p class="summary">Young Co-Chair of the moderated poster session “Therapeutics in IBD: Real-world experience (I)”, plus three accepted abstracts on NLP/LLM-based Montreal classification, transient elastography in heart failure, and a clinical case of clear cell sarcoma of the gastrointestinal tract.</p>
-    <a class="read-more" href="events/ueg-week-2026-barcelona/">Read more <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chevron-right"></use></svg></a>
-  </div>
-</li>
-<li class="talk">
-  <time datetime="2026-05-04">May 4, 2026</time>
-  <div>
-    <h3><a href="events/ddw-2026-chicago/">NLP-based classification of bowel preparation quality in colonoscopy reports</a></h3>
-    <p class="where">Digestive Disease Week (DDW) 2026 · Chicago, IL, United States</p>
-    <p class="summary">Poster Mo2176: automated bowel-preparation quality classification over 11,374 colonoscopy reports (TF-IDF + logistic regression, ~92% accuracy), selected for the AGA Innovation Themed Walking Tour.</p>
-    <a class="read-more" href="events/ddw-2026-chicago/">Read more <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chevron-right"></use></svg></a>
-  </div>
-</li>
-<li class="talk">
-  <time datetime="2025-10-07">Oct 7, 2025</time>
-  <div>
-    <h3><a href="events/ueg-week-2025-berlin/">NLP-based classification of bowel preparation quality and its association with adenoma detection rate</a></h3>
-    <p class="where">UEG Week 2025 · Berlin, Germany</p>
-    <p class="summary">Late-breaking oral presentation: NLP classification of bowel-preparation quality (TF-IDF + logistic regression, 92% CV accuracy, 11,374 reports) and its association with adenoma detection rate (n = 5,420; ADR 20.4%).</p>
-    <a class="read-more" href="events/ueg-week-2025-berlin/">Read more <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chevron-right"></use></svg></a>
-  </div>
-</li>
-</ol>
+    <ol class="talks">
+      <li>
+        <time datetime="2026-10-17">Oct 2026</time>
+        <div>
+          <h3><a href="events/ueg-week-2026-barcelona/">UEG Week 2026: Young Co-Chair and three abstract presentations</a></h3>
+          <p class="talk-where">UEG Week 2026 · Barcelona, Spain</p>
+          <p class="talk-summary">Young Co-Chair of the moderated poster session “Therapeutics in IBD: Real-world experience (I)”, plus three accepted abstracts on NLP/LLM-based Montreal classification, transient elastography in heart failure, and a clinical case of clear cell sarcoma of the gastrointestinal tract.</p>
+        </div>
+      </li>
+      <li>
+        <time datetime="2026-05-04">May 2026</time>
+        <div>
+          <h3><a href="events/ddw-2026-chicago/">NLP-based classification of bowel preparation quality in colonoscopy reports</a></h3>
+          <p class="talk-where">Digestive Disease Week (DDW) 2026 · Chicago, IL, United States</p>
+          <p class="talk-summary">Poster Mo2176: automated bowel-preparation quality classification over 11,374 colonoscopy reports (TF-IDF + logistic regression, ~92% accuracy), selected for the AGA Innovation Themed Walking Tour.</p>
+        </div>
+      </li>
+      <li>
+        <time datetime="2025-10-07">Oct 2025</time>
+        <div>
+          <h3><a href="events/ueg-week-2025-berlin/">NLP-based classification of bowel preparation quality and its association with adenoma detection rate</a></h3>
+          <p class="talk-where">UEG Week 2025 · Berlin, Germany</p>
+          <p class="talk-summary">Late-breaking oral presentation: NLP classification of bowel-preparation quality (TF-IDF + logistic regression, 92% CV accuracy, 11,374 reports) and its association with adenoma detection rate (n = 5,420; ADR 20.4%).</p>
+        </div>
+      </li>
+    </ol>
 <!-- END:recent-talks -->
-    <p class="more"><a class="btn-quiet" href="events/">All talks <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chevron-right"></use></svg></a></p>
+    <a class="more-link" href="events/">All talks <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"></use></svg></a>
   </div>
 </section>
 
 <!-- ============ AWARDS (also copied to the CV page) ============ -->
-<section id="home-awards" class="section">
-  <h2 class="section-title">Awards</h2>
+<section class="row wrap" id="home-awards">
+  <h2 class="row-title">Awards</h2>
+  <div class="row-body">
 <!-- BEGIN:awards -->
-  <ul class="award-list">
-    <li class="award">
-      <h3><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#trophy"></use></svg>Best Poster Presentation Award</h3>
-      <p class="meta">Turkish Society of Gastroenterology (TGD) · 2025</p>
-      <p class="desc">Assessment of liver stiffness by transient elastography in heart failure: a cross-sectional study linking hepatic congestion with echocardiographic findings</p>
-    </li>
-    <li class="award">
-      <h3><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#trophy"></use></svg>Best Thesis Award</h3>
-      <p class="meta">Istanbul University, Istanbul Faculty of Medicine · 2023</p>
-      <p class="desc">Evaluation of hepatobiliary pathologies using non-invasive methods (radiological, FibroScan and biochemical) in patients with inflammatory bowel disease</p>
-    </li>
-  </ul>
+    <ol class="entries dated">
+      <li>
+        <span class="year">2025</span>
+        <div>
+          <h3>Best Poster Presentation Award</h3>
+          <p class="where">Turkish Society of Gastroenterology (TGD)</p>
+          <p class="desc">Assessment of liver stiffness by transient elastography in heart failure: a cross-sectional study linking hepatic congestion with echocardiographic findings</p>
+        </div>
+      </li>
+      <li>
+        <span class="year">2023</span>
+        <div>
+          <h3>Best Thesis Award</h3>
+          <p class="where">Istanbul University, Istanbul Faculty of Medicine</p>
+          <p class="desc">Evaluation of hepatobiliary pathologies using non-invasive methods (radiological, FibroScan and biochemical) in patients with inflammatory bowel disease</p>
+        </div>
+      </li>
+    </ol>
 <!-- END:awards -->
+  </div>
 </section>
 
 <!-- ============ CONTACT ============ -->
-<section id="contact" class="section">
-  <h2 class="section-title">Contact</h2>
-  <p class="section-lead"><strong>Open to collaboration</strong> on datasets, multicentre studies, AI/NLP validation and clinical research. Get in touch by e-mail.</p>
-  <div class="contact-grid">
-    <div class="c-card">
-      <div class="c-head">
-        <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#map-pin"></use></svg></span>
-        <h3>Clinic</h3>
+<section class="row wrap" id="contact">
+  <h2 class="row-title">Contact</h2>
+  <div class="row-body">
+    <p class="lead">Open to collaboration on datasets, multicentre studies, AI/NLP validation and clinical research. Get in touch by <span class="nowrap">e-mail.</span></p>
+    <div class="contact-grid">
+      <div>
+        <p class="label">Clinic</p>
+        <address>
+          Division of Gastroenterology &amp; Hepatology<br>
+          Department of Internal Medicine<br>
+          Istanbul University, Istanbul Faculty of Medicine<br>
+          Çapa, Fatih, Istanbul, Türkiye
+        </address>
+        <a class="text-link" href="https://maps.app.goo.gl/Ey4eb2UkBD5aQzT97" target="_blank" rel="noopener">View on map <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"></use></svg></a>
       </div>
-      <address>
-        Division of Gastroenterology &amp; Hepatology<br>
-        Department of Internal Medicine<br>
-        Istanbul University, Istanbul Faculty of Medicine<br>
-        Çapa, Fatih, Istanbul, Türkiye
-      </address>
-      <a class="btn-soft" href="https://maps.app.goo.gl/Ey4eb2UkBD5aQzT97" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#map"></use></svg>View on Map</a>
-    </div>
-    <div class="c-card">
-      <div class="c-head">
-        <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chat-bubble-left-right"></use></svg></span>
-        <h3>Connect</h3>
+      <div>
+        <p class="label">E-mail</p>
+        <a class="email" href="mailto:bfagargun@istanbul.edu.tr">bfagargun@istanbul.edu.tr</a>
+        <p class="label spaced">Profiles</p>
+        <ul class="link-list">
+          <li><a href="https://orcid.org/0000-0002-3933-1881" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#orcid"></use></svg>ORCID</a></li>
+          <li><a href="https://scholar.google.com/citations?hl=en&amp;user=MeNxgD4AAAAJ" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#google-scholar"></use></svg>Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/besim-fazil-agargun" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#linkedin"></use></svg>LinkedIn</a></li>
+          <li><a href="https://github.com/bfagargun" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg>GitHub</a></li>
+          <li><a href="https://www.instagram.com/bfagargun/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#instagram"></use></svg>Instagram</a></li>
+          <li><a href="https://x.com/bfagargun" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#x"></use></svg>X (Twitter)</a></li>
+        </ul>
       </div>
-      <a class="c-row" href="mailto:bfagargun@istanbul.edu.tr">
-        <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#envelope"></use></svg></span>
-        <span><span class="c-label">Email</span><span class="c-value">bfagargun@istanbul.edu.tr</span></span>
-      </a>
-      <hr class="c-divider">
-      <p class="c-find">Find me on</p>
-      <ul class="c-social">
-        <li><a href="https://orcid.org/0000-0002-3933-1881" target="_blank" rel="noopener" title="ORCID" aria-label="ORCID"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#orcid"></use></svg></a></li>
-        <li><a href="https://scholar.google.com/citations?hl=en&amp;user=MeNxgD4AAAAJ" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#google-scholar"></use></svg></a></li>
-        <li><a href="https://www.linkedin.com/in/besim-fazil-agargun" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#linkedin"></use></svg></a></li>
-        <li><a href="https://github.com/bfagargun" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg></a></li>
-        <li><a href="https://www.instagram.com/bfagargun/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#instagram"></use></svg></a></li>
-        <li><a href="https://x.com/bfagargun" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X (Twitter)"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#x"></use></svg></a></li>
-      </ul>
     </div>
   </div>
 </section>
 
 </main>
-<footer class="site-footer">© <span data-year>2026</span> Besim Fazil Agargun</footer>
+<footer class="site-footer wrap"><svg class="logo" aria-hidden="true" viewBox="0 0 231 346"><use href="assets/icons.svg#gi"></use></svg><span>© <span data-year>2026</span> Besim Fazil Agargun</span></footer>
 <script src="assets/js/site.js" defer></script>
 </body>
 </html>

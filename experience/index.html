@@ -20,132 +20,111 @@
 <link rel="icon" href="../favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icon-32.png">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/source-sans-3-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 <body>
-<a class="home-link" href="../"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#arrow-left"></use></svg>Home</a>
-<main>
+<main class="wrap page">
+<a class="back" href="../"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#arrow-left"></use></svg>Home</a>
 
-<header class="page-head container">
+<header class="page-head">
   <h1>Curriculum Vitae</h1>
-  <p>Besim Fazil Agargun, MD · Gastroenterology &amp; Hepatology, Istanbul University</p>
-  <p><a class="btn-primary" href="../uploads/Agargun-CV-2026-09.pdf"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#document-arrow-down"></use></svg>Download CV (PDF)</a></p>
+  <p class="intro">Besim Fazil Agargun, MD · Gastroenterology Fellow, Istanbul University, Istanbul Faculty of Medicine</p>
+  <a class="btn" href="../uploads/Agargun-CV-2026-09.pdf"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#document-arrow-down"></use></svg>Download CV</a>
 </header>
 
-<!-- The Experience, Academic Service and Awards blocks below are copied from index.html by tools/build.py. Edit them in index.html. -->
-<section class="section">
-  <h2 class="section-title">Experience</h2>
-  <div class="timeline-wrap">
+<!-- The four blocks below are copied from index.html by tools/build.py. Edit them in index.html, then run the script. -->
+<section class="row" id="experience">
+  <h2 class="row-title">Experience</h2>
+  <div class="row-body">
 <!-- BEGIN:experience -->
-    <ol class="timeline">
+    <ol class="entries">
       <li>
-        <span class="timeline-dot"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#briefcase"></use></svg></span>
-        <div class="t-card">
-          <div class="t-head">
-            <h3>Gastroenterology &amp; Hepatology Fellow</h3>
-            <span class="t-date"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#calendar"></use></svg><span>2024 - <span class="now">Present</span></span></span>
-          </div>
-          <span class="t-org">Istanbul University, Istanbul Faculty of Medicine</span>
-          <p class="t-text">Clinical care in gastroenterology and hepatology; endoscopy unit practice (diagnostic and therapeutic endoscopy, intestinal ultrasound, transient elastography). Scientific lead of an NLP programme over more than 11,000 colonoscopy reports and coordinating investigator of the ELASTIBD study.</p>
-        </div>
+        <div class="entry-head"><h3>Gastroenterology &amp; Hepatology Fellow</h3><span class="when">2024 - present</span></div>
+        <p class="where">Istanbul University, Istanbul Faculty of Medicine</p>
+        <p class="desc">Clinical care in gastroenterology and hepatology; endoscopy unit practice (diagnostic and therapeutic endoscopy, intestinal ultrasound, transient elastography). Scientific lead of an NLP programme over more than 11,000 colonoscopy reports and coordinating investigator of the ELASTIBD study.</p>
       </li>
       <li>
-        <span class="timeline-dot"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#briefcase"></use></svg></span>
-        <div class="t-card">
-          <div class="t-head">
-            <h3>Resident, Internal Medicine</h3>
-            <span class="t-date"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#calendar"></use></svg><span>2018 - 2022</span></span>
-          </div>
-          <span class="t-org">Istanbul University, Istanbul Faculty of Medicine</span>
-        </div>
+        <div class="entry-head"><h3>Resident, Internal Medicine</h3><span class="when">2018 - 2022</span></div>
+        <p class="where">Istanbul University, Istanbul Faculty of Medicine</p>
       </li>
     </ol>
 <!-- END:experience -->
   </div>
 </section>
 
-<section class="section">
-  <h2 class="section-title">Education</h2>
-  <div class="timeline-wrap">
-    <ol class="timeline teal">
+<section class="row" id="education">
+  <h2 class="row-title">Education</h2>
+  <div class="row-body">
+<!-- BEGIN:education -->
+    <ol class="entries">
       <li>
-        <span class="timeline-dot"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#academic-cap"></use></svg></span>
-        <div class="t-card">
-          <div class="t-head">
-            <h3>PhD, Clinical Trials</h3>
-            <span class="t-date"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#calendar"></use></svg><span>2026 - <span class="now">Present</span></span></span>
-          </div>
-          <span class="t-org">Istanbul University</span>
-        </div>
+        <div class="entry-head"><h3>PhD, Clinical Trials</h3><span class="when">2026 - present</span></div>
+        <p class="where">Istanbul University</p>
       </li>
       <li>
-        <span class="timeline-dot"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#academic-cap"></use></svg></span>
-        <div class="t-card">
-          <div class="t-head">
-            <h3>Fellowship, Gastroenterology &amp; Hepatology</h3>
-            <span class="t-date"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#calendar"></use></svg><span>2024 - <span class="now">Present</span></span></span>
-          </div>
-          <span class="t-org">Istanbul University, Istanbul Faculty of Medicine</span>
-          <p class="t-text">Subspecialty training in gastroenterology and hepatology, including diagnostic and therapeutic endoscopy.</p>
-        </div>
+        <div class="entry-head"><h3>Fellowship, Gastroenterology &amp; Hepatology</h3><span class="when">2024 - present</span></div>
+        <p class="where">Istanbul University, Istanbul Faculty of Medicine</p>
+        <p class="desc">Subspecialty training in gastroenterology and hepatology, including diagnostic and therapeutic endoscopy.</p>
       </li>
       <li>
-        <span class="timeline-dot"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#academic-cap"></use></svg></span>
-        <div class="t-card">
-          <div class="t-head">
-            <h3>Residency, Internal Medicine</h3>
-            <span class="t-date"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#calendar"></use></svg><span>2018 - 2022</span></span>
-          </div>
-          <span class="t-org">Istanbul University, Istanbul Faculty of Medicine</span>
-        </div>
+        <div class="entry-head"><h3>Residency, Internal Medicine</h3><span class="when">2018 - 2022</span></div>
+        <p class="where">Istanbul University, Istanbul Faculty of Medicine</p>
       </li>
       <li>
-        <span class="timeline-dot"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#academic-cap"></use></svg></span>
-        <div class="t-card">
-          <div class="t-head">
-            <h3>MD</h3>
-            <span class="t-date"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#calendar"></use></svg><span>2012 - 2018</span></span>
-          </div>
-          <span class="t-org">Istanbul University, Istanbul Faculty of Medicine</span>
-        </div>
+        <div class="entry-head"><h3>MD</h3><span class="when">2012 - 2018</span></div>
+        <p class="where">Istanbul University, Istanbul Faculty of Medicine</p>
       </li>
     </ol>
+<!-- END:education -->
   </div>
 </section>
 
-<section class="section">
-  <h2 class="section-title">Academic Service &amp; Memberships</h2>
-  <div class="prose-width">
+<section class="row" id="service">
+  <h2 class="row-title">Academic Service &amp; Memberships</h2>
+  <div class="row-body">
 <!-- BEGIN:service -->
-    <ul class="service-list">
-      <li><strong>Peer reviewer:</strong> <em>American Journal of Gastroenterology</em>, <em>Inflammatory Bowel Diseases</em>, <em>Journal of Clinical Gastroenterology</em></li>
-      <li><strong>Society memberships:</strong> European Society of Gastrointestinal Endoscopy (ESGE), American Society for Gastrointestinal Endoscopy (ASGE), European Crohn's and Colitis Organisation (ECCO), Crohn's &amp; Colitis Foundation, Turkish Inflammatory Bowel Disease Association (IBHD), Turkish Association for the Study of the Liver (TKAD)</li>
-      <li><strong>Young Co-Chair:</strong> UEG Week 2026, moderated poster session “Therapeutics in IBD: Real-world experience (I)”</li>
-    </ul>
+    <dl class="facts">
+      <dt>Peer reviewer</dt>
+      <dd><em>American Journal of Gastroenterology</em><br><em>Inflammatory Bowel Diseases</em><br><em>Journal of Clinical Gastroenterology</em></dd>
+      <dt>Memberships</dt>
+      <dd>European Society of Gastrointestinal Endoscopy (ESGE)<br>American Society for Gastrointestinal Endoscopy (ASGE)<br>European Crohn's and Colitis Organisation (ECCO)<br>Crohn's &amp; Colitis Foundation<br>Turkish Inflammatory Bowel Disease Association (IBHD)<br>Turkish Association for the Study of the Liver (TKAD)</dd>
+      <dt>Faculty roles</dt>
+      <dd>Young Co-Chair, UEG Week 2026: moderated poster session “Therapeutics in IBD: Real-world experience (I)”</dd>
+    </dl>
 <!-- END:service -->
   </div>
 </section>
 
-<section class="section">
-  <h2 class="section-title">Awards</h2>
+<section class="row" id="awards">
+  <h2 class="row-title">Awards</h2>
+  <div class="row-body">
 <!-- BEGIN:awards -->
-  <ul class="award-list">
-    <li class="award">
-      <h3><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#trophy"></use></svg>Best Poster Presentation Award</h3>
-      <p class="meta">Turkish Society of Gastroenterology (TGD) · 2025</p>
-      <p class="desc">Assessment of liver stiffness by transient elastography in heart failure: a cross-sectional study linking hepatic congestion with echocardiographic findings</p>
-    </li>
-    <li class="award">
-      <h3><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#trophy"></use></svg>Best Thesis Award</h3>
-      <p class="meta">Istanbul University, Istanbul Faculty of Medicine · 2023</p>
-      <p class="desc">Evaluation of hepatobiliary pathologies using non-invasive methods (radiological, FibroScan and biochemical) in patients with inflammatory bowel disease</p>
-    </li>
-  </ul>
+    <ol class="entries dated">
+      <li>
+        <span class="year">2025</span>
+        <div>
+          <h3>Best Poster Presentation Award</h3>
+          <p class="where">Turkish Society of Gastroenterology (TGD)</p>
+          <p class="desc">Assessment of liver stiffness by transient elastography in heart failure: a cross-sectional study linking hepatic congestion with echocardiographic findings</p>
+        </div>
+      </li>
+      <li>
+        <span class="year">2023</span>
+        <div>
+          <h3>Best Thesis Award</h3>
+          <p class="where">Istanbul University, Istanbul Faculty of Medicine</p>
+          <p class="desc">Evaluation of hepatobiliary pathologies using non-invasive methods (radiological, FibroScan and biochemical) in patients with inflammatory bowel disease</p>
+        </div>
+      </li>
+    </ol>
 <!-- END:awards -->
+  </div>
 </section>
 
 </main>
-<footer class="site-footer">© <span data-year>2026</span> Besim Fazil Agargun</footer>
+<footer class="site-footer wrap"><svg class="logo" aria-hidden="true" viewBox="0 0 231 346"><use href="../assets/icons.svg#gi"></use></svg><span>© <span data-year>2026</span> Besim Fazil Agargun</span></footer>
 <script src="../assets/js/site.js" defer></script>
 </body>
 </html>
