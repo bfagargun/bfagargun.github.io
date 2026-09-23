@@ -68,9 +68,6 @@ sections:
           description: ""
           icon: hero/sparkles
           status: active
-      cta:
-        text: Çapa Gastroenterology research group
-        url: /capagastro/
     design:
       layout: cards
 
