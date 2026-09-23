@@ -1,37 +1,65 @@
 # besimagargun.com
 
-Personal academic website of Besim Fazil Agargun (Besim Fazıl Ağargün), MD — built with [Hugo](https://gohugo.io) and the
-[Hugo Blox](https://hugoblox.com) *Academic CV* template, deployed to GitHub Pages by
-`.github/workflows/deploy.yml` on every push to `main`.
+Kişisel akademik site. Düz HTML ve CSS ile yazılmıştır; tema, paket veya derleme adımı yoktur. `main` dalına gönderilen dosyalar birkaç dakika içinde yayına girer.
 
-## Where things live
+## Dosyalar
 
-| What | File(s) |
+| Dosya / klasör | İçerik |
 |---|---|
-| Profile: name, role, bio, links, education, experience, awards | `data/authors/me.yaml` |
-| Home page sections (bio, selected publications, talks, awards, contact) | `content/_index.md` |
-| CV page | `content/experience.md` |
-| Publications (one folder per paper, generated from BibTeX) | `content/publications/` |
-| Talks & presentations | `content/events/` |
-| Site settings, SEO description, analytics IDs, verification codes | `config/_default/params.yaml` |
-| Menu | `config/_default/menus.yaml` |
-| Portrait / favicon / social sharing card | `assets/media/authors/me.jpg`, `assets/media/icon.png`, `assets/media/sharing.png` |
-| CV PDF | `static/uploads/Agargun-CV-YYYY-MM.pdf` (update the button URL in `content/_index.md` and `content/experience.md`) |
-| Person schema.org metadata | `layouts/_partials/hooks/head-end/person-schema.html` |
+| `index.html` | Ana sayfa: profil, projeler, deneyim, üyelikler, seçilmiş yayınlar, konuşmalar, ödüller, iletişim |
+| `experience/index.html` | CV sayfası |
+| `publications/` | Yayın listesi ve her yayının kendi sayfası (betik üretir, elle düzenlemeyin) |
+| `events/` | Konuşma listesi ve sayfaları (betik üretir, elle düzenlemeyin) |
+| `404.html` | Bulunamayan sayfa |
+| `assets/css/site.css` | Tüm görünüm; renkler dosyanın en başında |
+| `assets/js/site.js` | Yalnızca yayınlardaki "Cite" penceresi |
+| `assets/icons.svg` | Sitedeki ikonlar |
+| `assets/img/` | Fotoğraf, paylaşım görseli (`og.png`), sekme simgeleri |
+| `uploads/` | CV PDF dosyası |
+| `data/publications.json` | Yayın bilgileri |
+| `data/talks.json` | Konuşma bilgileri |
+| `data/bib/` | Her yayının BibTeX kaydı ("Cite" düğmesi bunu gösterir) |
+| `tools/build.py` | Yayın ve konuşma sayfalarını, site haritasını üretir |
+| `tools/add_pubmed.py` | PMID ile PubMed'den yayın ekler |
+| `google1f7828e7d6067577.html` | Google Search Console doğrulaması. Silmeyin. |
+| `CNAME` | Alan adı (besimagargun.com) |
 
-## Adding a publication
+`data/`, `tools/` ve bu README yayınlanmaz, yalnızca depoda durur.
 
-1. Append a `@article{...}` entry to `publications.bib` (PubMed → *Cite* → BibTeX works; keep `doi`, `pmid` and a `keywords` line for tags).
-2. Commit and push. The **Import Publications From Bibtex** action opens a pull request that adds
-   `content/publications/<key>/index.md` — merge it.
-3. Optional polish in that `index.md`: replace your own name in `authors:` with `me`, set `featured: true`
-   to show it on the home page (max 5), and add a PubMed link under `links:`.
+## Metin değiştirmek
 
-## Local preview
+`index.html` dosyasını açıp metni doğrudan değiştirin ve kaydedin. Bölümler dosyada `<!-- ============ BÖLÜM ADI ============ -->` başlıklarıyla ayrılmıştır.
 
-```bash
-pnpm install
-hugo server -D --buildFuture
-```
+`<!-- BEGIN:... -->` ve `<!-- END:... -->` işaretleri arasındaki bloklar betikle güncellenir:
 
-Hugo version is pinned in `hugoblox.yaml` (`hugo_version`).
+- `selected-publications` ve `recent-talks`: `data/` dosyalarından doldurulur. Buraya elle yazmayın.
+- `experience`, `service`, `awards`: ana sayfada elle düzenlenir, CV sayfasına betik kopyalar. Değişiklikten sonra `python3 tools/build.py` çalıştırın.
+
+## Yayın eklemek
+
+1. `python3 tools/add_pubmed.py 41669978` (PMID yazın; birden çok PMID boşlukla ayrılabilir). Ana sayfadaki "Selected Publications" altında da görünmesi için sonuna `--featured` ekleyin.
+2. `data/publications.json` içinde yeni kaydı kontrol edin (dergi adı, `tags`).
+3. `python3 tools/build.py`
+
+Elle eklemek için `data/publications.json` içine aynı biçimde bir kayıt ekleyip `python3 tools/build.py` çalıştırmak yeterlidir. `"featured": true` olan yayınlar ana sayfada çıkar. Adınız yazar listesinde hangi yazımla olursa olsun (Agargun BF, Ağargün BF...) kalın gösterilir.
+
+## Konuşma eklemek
+
+`data/talks.json` içine bir kayıt ekleyin: `slug` (adres, ör. `ueg-week-2027-berlin`), `title`, `date`, `end`, `event`, `event_url`, `location`, `summary`, `abstract`, `tags`. Sonra `python3 tools/build.py`. Ana sayfada en yeni 3 konuşma görünür. `abstract` alanında `**kalın**`, `*italik*` ve `- ` ile başlayan madde işaretleri kullanılabilir.
+
+## Proje eklemek veya değiştirmek
+
+`index.html` içinde "RESEARCH PROJECTS" bölümündeki bir `<li class="project">` bloğunu kopyalayıp başlığı değiştirin. Durum etiketi sınıfları: `status-active` (Active), `status-planning` (Planning), `status-published` (Published). İkon adları `assets/icons.svg` içindeki `id` değerleridir.
+
+## Yazım kuralları
+
+- Uzun (—) ve kısa (–) tire kullanılmaz; aralıklarda `-` kullanılır.
+- Ad sitede "Besim Fazil Agargun" olarak (Türkçe karaktersiz) yazılır. Türkçe yazım "Besim Fazıl Ağargün" yalnızca arama motorlarının okuduğu açıklama ve profil verisinde durur; böylece iki yazımla da aranınca site bulunur.
+
+## Yayınlama
+
+`main` dalına gönderilen her değişiklik `.github/workflows/deploy.yml` ile GitHub Pages'e yüklenir. Derleme olmadığı için yayın bir iki dakika sürer.
+
+## Eski sürüm
+
+Bu sürümden önceki HugoBlox sitesi depoda `hugoblox-son` etiketiyle saklanır. Geri dönmek gerekirse o etiketteki dosyalar geri yüklenebilir.
