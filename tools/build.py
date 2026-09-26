@@ -404,6 +404,35 @@ def talk_item(t, root, base):
 </li>"""
 
 
+def talk_jsonld(t, path):
+    """Complete schema.org Event so Search Console reports no missing fields
+    (address, offers, image, eventStatus, organizer, performer)."""
+    address = {"@type": "PostalAddress", "addressLocality": t.get("city") or t["location"].split(",")[0].strip()}
+    if t.get("region"):
+        address["addressRegion"] = t["region"]
+    if t.get("country"):
+        address["addressCountry"] = t["country"]
+    place = {"@type": "Place", "name": t.get("venue") or t["location"], "address": address}
+    ld = {"@context": "https://schema.org", "@type": "Event", "name": t["title"],
+          "description": " ".join(t["summary"].split()), "url": f"{SITE}/{path}",
+          "startDate": t["date"], "endDate": t.get("end") or t["date"],
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": place, "image": [f"{SITE}/assets/img/og.png"],
+          "performer": {"@type": "Person", "@id": f"{SITE}/#person", "name": OWNER},
+          "superEvent": {"@type": "Event", "name": t["event"], "url": t.get("event_url", ""), "location": place},
+          "offers": {"@type": "Offer", "url": t.get("event_url") or f"{SITE}/{path}",
+                     "availability": "https://schema.org/InStock", "validFrom": t["date"][:4] + "-01-01"}}
+    if not t.get("event_url"):
+        del ld["superEvent"]["url"]
+    if t.get("organizer"):
+        org = {"@type": "Organization", "name": t["organizer"]}
+        if t.get("organizer_url"):
+            org["url"] = t["organizer_url"]
+        ld["organizer"] = org
+    return jsonld(ld)
+
+
 def build_talks(talks):
     changed = []
     for i, t in enumerate(talks):
@@ -430,7 +459,7 @@ def build_talks(talks):
   {pager(talks, i, 'talks')}
 </article>"""
         doc = page(root=root, path=path, title=f"{t['title']} | {OWNER}", description=clip(t["summary"]),
-                   body=body, og_type="article")
+                   body=body, og_type="article", head_extra=talk_jsonld(t, path))
         if write(path + "index.html", doc):
             changed.append(path)
     body = f"""<header class="page-head container">

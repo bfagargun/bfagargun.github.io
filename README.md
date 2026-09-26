@@ -45,7 +45,7 @@ Elle eklemek için `data/publications.json` içine aynı biçimde bir kayıt ekl
 
 ## Konuşma eklemek
 
-`data/talks.json` içine bir kayıt ekleyin: `slug` (adres, ör. `ueg-week-2027-berlin`), `title`, `date`, `end`, `event`, `event_url`, `location`, `summary`, `abstract`, `tags`. Sonra `python3 tools/build.py`. Ana sayfada en yeni 3 konuşma görünür. `abstract` alanında `**kalın**`, `*italik*` ve `- ` ile başlayan madde işaretleri kullanılabilir.
+`data/talks.json` içine bir kayıt ekleyin: `slug` (adres, ör. `ueg-week-2027-berlin`), `title`, `date`, `end`, `event`, `event_url`, `location`, `organizer`, `organizer_url`, `venue`, `city`, `region` (isteğe bağlı), `country` (iki harfli kod), `summary`, `abstract`, `tags`. Son altı alan Google için schema.org Event verisini doldurur (Search Console'da eksik alan uyarısı çıkmaması için). Sonra `python3 tools/build.py`. Ana sayfada en yeni 3 konuşma görünür. `abstract` alanında `**kalın**`, `*italik*` ve `- ` ile başlayan madde işaretleri kullanılabilir.
 
 ## Proje eklemek veya değiştirmek
 
