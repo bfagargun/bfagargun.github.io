@@ -6,7 +6,7 @@ Kişisel akademik site. Düz HTML ve CSS ile yazılmıştır; tema, paket veya d
 
 | Dosya / klasör | İçerik |
 |---|---|
-| `index.html` | Ana sayfa: profil, projeler, deneyim, üyelikler, seçilmiş yayınlar, konuşmalar, ödüller, iletişim |
+| `index.html` | Ana sayfa: profil, ilgi alanları, projeler, eğitim, üyelikler, seçilmiş yayınlar, konuşmalar, ödüller, iletişim |
 | `experience/index.html` | CV sayfası |
 | `publications/` | Yayın listesi ve her yayının kendi sayfası (betik üretir, elle düzenlemeyin) |
 | `events/` | Konuşma listesi ve sayfaları (betik üretir, elle düzenlemeyin) |
@@ -34,7 +34,7 @@ Kişisel akademik site. Düz HTML ve CSS ile yazılmıştır; tema, paket veya d
 `<!-- BEGIN:... -->` ve `<!-- END:... -->` işaretleri arasındaki bloklar betikle güncellenir:
 
 - `selected-publications` ve `recent-talks`: `data/` dosyalarından doldurulur. Buraya elle yazmayın.
-- `experience`, `education`, `service`, `awards`: ana sayfada elle düzenlenir, CV sayfasına betik kopyalar. Değişiklikten sonra `python3 tools/build.py` çalıştırın.
+- `education`, `service`, `awards`: ana sayfada elle düzenlenir, CV sayfasına betik kopyalar. Değişiklikten sonra `python3 tools/build.py` çalıştırın.
 
 ## Yayın eklemek
 
@@ -64,3 +64,5 @@ Elle eklemek için `data/publications.json` içine aynı biçimde bir kayıt ekl
 ## Eski sürüm
 
 Bu sürümden önceki HugoBlox sitesi depoda `hugoblox-son` etiketiyle saklanır. Geri dönmek gerekirse o etiketteki dosyalar geri yüklenebilir.
+
+Yeni tasarımdan (serif başlıklar, altın vurgu rengi, Eylül 2026) hemen önceki düz HTML sürümü `tasarim-oncesi` etiketiyle saklanır.

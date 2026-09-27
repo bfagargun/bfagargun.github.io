@@ -41,20 +41,12 @@
   --muted: #8f9db0;          /* meta, dates, labels */
   --rule: rgba(148, 163, 184, 0.16);
   --rule-strong: rgba(148, 163, 184, 0.3);
-  --accent: #5cc8bd;         /* the one accent colour (links, markers) */
-  --accent-strong: #8fdcd3;
-  --accent-soft: rgba(92, 200, 189, 0.12);
+  --accent: #d6b46c;         /* the one accent colour: gold (links, markers, logo) */
+  --accent-strong: #ead09a;  /* hover */
+  --accent-soft: rgba(214, 180, 108, 0.12);
   --serif: "Source Serif", "Source Serif 4", Georgia, Cambria, "Times New Roman", serif;
   --sans: "Source Sans", "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-/* Alternative accent colours: <html data-accent="gold|blue|coral|sage|lavender|rose|champagne"> */
-:root[data-accent="gold"]       { --accent: #d6b46c; --accent-strong: #ead09a; --accent-soft: rgba(214, 180, 108, 0.12); }
-:root[data-accent="blue"]       { --accent: #8ab6ee; --accent-strong: #b6d1f6; --accent-soft: rgba(138, 182, 238, 0.12); }
-:root[data-accent="coral"]      { --accent: #f29b82; --accent-strong: #f7c3b4; --accent-soft: rgba(242, 155, 130, 0.12); }
-:root[data-accent="sage"]       { --accent: #9dc8a5; --accent-strong: #c4dec9; --accent-soft: rgba(157, 200, 165, 0.12); }
-:root[data-accent="lavender"]   { --accent: #b3a9f3; --accent-strong: #d1cbf8; --accent-soft: rgba(179, 169, 243, 0.12); }
-:root[data-accent="rose"]       { --accent: #e5a3b6; --accent-strong: #efc8d3; --accent-soft: rgba(229, 163, 182, 0.12); }
-:root[data-accent="champagne"]  { --accent: #e3cfa6; --accent-strong: #eee2ca; --accent-soft: rgba(227, 207, 166, 0.12); }
 
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
