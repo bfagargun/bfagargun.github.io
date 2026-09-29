@@ -461,11 +461,10 @@ def talk_jsonld(t, path):
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "location": place, "image": [f"{SITE}/assets/img/og.png"],
           "performer": {"@type": "Person", "@id": f"{SITE}/#person", "name": OWNER},
-          "superEvent": {"@type": "Event", "name": t["event"], "url": t.get("event_url", ""), "location": place},
           "offers": {"@type": "Offer", "url": t.get("event_url") or f"{SITE}/{path}",
                      "availability": "https://schema.org/InStock", "validFrom": t["date"][:4] + "-01-01"}}
-    if not t.get("event_url"):
-        del ld["superEvent"]["url"]
+    # No nested superEvent: Google validates any nested Event as a separate item and
+    # flagged it for missing startDate, image, eventStatus, organizer, etc. (Sep 2026).
     if t.get("organizer"):
         org = {"@type": "Organization", "name": t["organizer"]}
         if t.get("organizer_url"):
